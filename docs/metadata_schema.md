@@ -1,6 +1,6 @@
 # PMEGP Archive Metadata Schema & Provenance Standards
 
-To ensure that the archive acts as a trustworthy, academic, and administrative resource, every document must be systematically indexed and fully validated. This file specifies the final, production-frozen JSON and CSV schemas, which track relationships, status progression, file provenance, and collection quality.
+To ensure that the archive acts as a trustworthy, academic, and administrative resource, every document must be systematically indexed and fully validated. This file specifies the final, production-frozen JSON and CSV schemas, which track relationships, status progression, file provenance, and independent quality metrics.
 
 ---
 
@@ -44,19 +44,39 @@ Administrative policies are deeply interconnected. To capture relationships, eac
 
 ---
 
-## 4. Collection Quality Score
+## 4. Source Authority Classification
 
-To make the quality of the archive measurable rather than just the quantity, every document must be audited and assigned a **Collection Quality Score** under the `quality_score` field:
+To measure and establish the reliability of our sourcing channels, every document must record its **Source Authority Level**:
 
-*   **`A`**: Official PDF downloaded directly from the primary government source, complete, and digitally signed if applicable.
-*   **`B`**: Official PDF downloaded from a primary or certified government portal, complete and high quality (not signed).
-*   **`C`**: Scanned PDF or document of lower readability, but from an official source.
-*   **`D`**: Copy obtained from secondary sources (unverified mirrors, researchers) awaiting primary source validation.
-*   **`X`**: Rejected, unreadable, or unverifiable document (automatically flagged for deletion).
+*   **`PRIMARY`**: Downloaded directly from the main issuing authority's portal (e.g., KVIC, MoMSME, AP Government).
+*   **`SECONDARY`**: Obtained from a verified secondary government/bank portal (e.g., AP SLBC, neighbouring state SLBC, official central dashboard circular mirrors).
+*   **`MIRROR`**: Obtained from a public, third-party unverified mirror or document sharing platform.
+*   **`ARCHIVED`**: Retrieved from physical paper filings, RTIs, or scanned offline records.
 
 ---
 
-## 5. Master Schema Specification
+## 5. Independent Multi-Dimensional Quality Scores
+
+To perform a professional, granular audit of document quality, the single quality scale has been split into three independent indices:
+
+### A. Document Authenticity (`quality_authenticity`)
+*   **`A`**: Cryptographically signed, officially stamped, or published in the official government gazette.
+*   **`B`**: Unsigned but complete official publication on primary or certified portals, containing valid seal references.
+*   **`C`**: Copy of a document with minor missing seals/signature context, but still verifiably textually authentic.
+
+### B. Document Quality (`quality_document`)
+*   **`A`**: Digital native PDF with fully selectable, high-resolution text and structured formatting.
+*   **`B`**: High-quality complete OCR or high-readability scans where text is easily readable and clean.
+*   **`C`**: Low-quality scan, partially blurred or skewed pages, but textually complete and readable under review.
+
+### C. Metadata Completeness (`quality_metadata`)
+*   **`A`**: All fields are fully populated, with deep subject analysis, robust keywords, and active relationship mapping.
+*   **`B`**: Essential fields are complete, with standard keywords and verified provenance.
+*   **`C`**: Basic metadata populated, missing non-essential provenance or relationship linkages.
+
+---
+
+## 6. Master Schema Specification
 
 The following table defines the final, production-ready schema:
 
@@ -75,14 +95,17 @@ The following table defines the final, production-ready schema:
 | **Keywords** | `keywords` | `keywords` | Array/String | **Yes** | Tags |
 | **Source URL** | `source_url` | `source_url` | String/Null | **Yes** | Verified download link |
 | **Status** | `status` | `status` | String | **Yes** | `Active`, `Superseded`, `Withdrawn`, `Cancelled`, `Merged`, `Amended` |
-| **Quality Score** | `quality_score` | `quality_score` | String | **Yes** | `A`, `B`, `C`, `D`, `X` |
+| **Source Authority Level** | `source_authority_level` | `source_authority_level` | String | **Yes** | `PRIMARY`, `SECONDARY`, `MIRROR`, `ARCHIVED` |
+| **Authenticity Quality** | `quality_authenticity` | `quality_authenticity` | String | **Yes** | `A`, `B`, `C` |
+| **Document Quality** | `quality_document` | `quality_document` | String | **Yes** | `A`, `B`, `C` |
+| **Metadata Completeness** | `quality_metadata` | `quality_metadata` | String | **Yes** | `A`, `B`, `C` |
 | **File Path** | `file_path` | `file_path` | String | **Yes** | Relative path in repo |
 | **Provenance** | `provenance` | *(Nested/Prefix)* | Object | **Yes** | Source, Date, Collector, Hash, Original Name |
 | **Relationships** | `relationships` | *N/A* | Array | **Yes** | Direct policy relations |
 
 ---
 
-## 6. Production Examples
+## 7. Production Examples
 
 ### JSON Representation:
 ```json
@@ -107,7 +130,10 @@ The following table defines the final, production-ready schema:
     ],
     "source_url": "https://slbcorissa.com/wp-content/uploads/2018/09/PMEGP-Scheme-Guidelines.pdf",
     "status": "Superseded",
-    "quality_score": "B",
+    "source_authority_level": "SECONDARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "A",
     "file_path": "central-government/msme/guidelines/IN-MSME-2018-0001.pdf",
     "provenance": {
       "downloaded_from": "https://slbcorissa.com/wp-content/uploads/2018/09/PMEGP-Scheme-Guidelines.pdf",
@@ -117,12 +143,7 @@ The following table defines the final, production-ready schema:
       "original_filename": "PMEGP-Scheme-Guidelines.pdf",
       "archive_url": null
     },
-    "relationships": [
-      {
-        "target_id": "IN-MSME-2023-0001",
-        "type": "superseded_by"
-      }
-    ]
+    "relationships": []
   }
 ]
 ```

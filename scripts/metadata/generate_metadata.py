@@ -46,9 +46,11 @@ VALID_TYPES = [
     "Letter", "Minutes", "Agenda", "Report", "Guidelines", "Instruction", "Other"
 ]
 
-VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended"]
+VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended", "Unknown"]
 
-VALID_QUALITY_SCORES = ["A", "B", "C", "D", "X"]
+VALID_AUTHORITY_LEVELS = ["PRIMARY", "SECONDARY", "MIRROR", "ARCHIVED"]
+
+VALID_SCORE_VALUES = ["A", "B", "C"]
 
 def calculate_sha256(filepath):
     sha256_hash = hashlib.sha256()
@@ -76,7 +78,8 @@ def save_csv_db(db):
     headers = [
         "document_id", "title", "type", "issuing_authority", "department", 
         "state", "district", "date", "reference_no", "subject", "keywords", 
-        "source_url", "status", "quality_score", "file_path",
+        "source_url", "status", "source_authority_level", 
+        "quality_authenticity", "quality_document", "quality_metadata", "file_path",
         "prov_downloaded_from", "prov_download_date", "prov_downloaded_by", 
         "prov_sha256", "prov_original_filename", "prov_archive_url",
         "relationships_list"
@@ -261,15 +264,36 @@ def main():
     if not status or status not in VALID_STATUSES:
         status = "Active"
         
-    print("\nCollection Quality Score levels:")
-    print("  A : Official PDF from primary government source, complete, digitally signed")
-    print("  B : Official PDF from primary/secondary source, complete, high quality (unsigned)")
-    print("  C : Official scan from government source, lower quality/readability")
-    print("  D : Secondary-source copy awaiting primary source verification")
-    print("  X : Rejected/unverifiable (flagged for review)")
-    quality_score = input("Select Quality Score (A, B, C, D, X): ").strip().upper()
-    while quality_score not in VALID_QUALITY_SCORES:
-         quality_score = input("Invalid score. Select from (A, B, C, D, X): ").strip().upper()
+    print(f"\nValid Source Authority Levels: {', '.join(VALID_AUTHORITY_LEVELS)}")
+    authority_level = input("Select Source Authority Level: ").strip().upper()
+    while authority_level not in VALID_AUTHORITY_LEVELS:
+        authority_level = input(f"Invalid level. Choose from {VALID_AUTHORITY_LEVELS}: ").strip().upper()
+        
+    print("\nIndependent Multi-Dimensional Quality Scores (Choose A, B, or C for each):")
+    
+    print("\n[1] Document Authenticity:")
+    print("  A : Digitally signed, stamped, or Gazette-published")
+    print("  B : Unsigned but complete official publication on primary/secondary portal")
+    print("  C : Copy with minor missing seal context, verified textually")
+    qual_auth = input("Choice (A, B, C): ").strip().upper()
+    while qual_auth not in VALID_SCORE_VALUES:
+        qual_auth = input("Choose A, B, or C: ").strip().upper()
+        
+    print("\n[2] Document Quality:")
+    print("  A : Digital-native PDF, fully selectable text")
+    print("  B : High-readability scan or complete OCR text")
+    print("  C : Low-readability scan, partially blurred but textually complete")
+    qual_doc = input("Choice (A, B, C): ").strip().upper()
+    while qual_doc not in VALID_SCORE_VALUES:
+        qual_doc = input("Choose A, B, or C: ").strip().upper()
+        
+    print("\n[3] Metadata Completeness:")
+    print("  A : Fully populated, deep subject tags, and active relationships")
+    print("  B : Essential fields populated, standard tags and verified provenance")
+    print("  C : Basic fields populated, missing non-essential relationship/provenance links")
+    qual_meta = input("Choice (A, B, C): ").strip().upper()
+    while qual_meta not in VALID_SCORE_VALUES:
+         qual_meta = input("Choose A, B, or C: ").strip().upper()
         
     collector = input("\nDownloaded By (your github username, default 'pavan53732'): ").strip()
     if not collector:
@@ -319,7 +343,10 @@ def main():
         "keywords": keywords,
         "source_url": source_url,
         "status": status,
-        "quality_score": quality_score,
+        "source_authority_level": authority_level,
+        "quality_authenticity": qual_auth,
+        "quality_document": qual_doc,
+        "quality_metadata": qual_meta,
         "file_path": final_file_path,
         "provenance": {
             "downloaded_from": source_url,

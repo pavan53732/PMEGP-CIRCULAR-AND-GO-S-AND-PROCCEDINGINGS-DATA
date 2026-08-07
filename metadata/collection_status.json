@@ -105,7 +105,7 @@
     "label": "SLBC Monitoring Reports",
     "expected": 50,
     "verified_total": null,
-    "collected": 1
+    "collected": 0
   },
   "districts_collector": {
     "label": "District Collector Proceedings",

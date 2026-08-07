@@ -44,9 +44,11 @@ VALID_TYPES = [
     "Letter", "Minutes", "Agenda", "Report", "Guidelines", "Instruction", "Other"
 ]
 
-VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended"]
+VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended", "Unknown"]
 
-VALID_QUALITY_SCORES = ["A", "B", "C", "D", "X"]
+VALID_AUTHORITY_LEVELS = ["PRIMARY", "SECONDARY", "MIRROR", "ARCHIVED"]
+
+VALID_SCORE_VALUES = ["A", "B", "C"]
 
 def validate():
     print("=" * 60)
@@ -109,7 +111,12 @@ def validate():
             errors.append(f"[{doc_id}] Document ID format is invalid. Expected [TERRITORY]-[AGENCY]-[YEAR]-[SEQUENCE] (e.g. AP-COI-2024-0012)")
             
         # Check required fields
-        required_fields = ["title", "type", "issuing_authority", "department", "state", "date", "reference_no", "subject", "keywords", "status", "quality_score", "file_path", "provenance"]
+        required_fields = [
+            "title", "type", "issuing_authority", "department", "state", "date", 
+            "reference_no", "subject", "keywords", "status", "source_authority_level", 
+            "quality_authenticity", "quality_document", "quality_metadata", 
+            "file_path", "provenance"
+        ]
         for field in required_fields:
             val = entry.get(field)
             if val is None or val == "" or (isinstance(val, list) and not val):
@@ -125,10 +132,16 @@ def validate():
         if status and status not in VALID_STATUSES:
             errors.append(f"[{doc_id}] Invalid status '{status}'. Must be one of {VALID_STATUSES}")
             
-        # Validate Quality Score
-        quality = entry.get("quality_score")
-        if quality and quality not in VALID_QUALITY_SCORES:
-            errors.append(f"[{doc_id}] Invalid quality_score '{quality}'. Must be one of {VALID_QUALITY_SCORES}")
+        # Validate Source Authority Level
+        auth_level = entry.get("source_authority_level")
+        if auth_level and auth_level not in VALID_AUTHORITY_LEVELS:
+            errors.append(f"[{doc_id}] Invalid source_authority_level '{auth_level}'. Must be one of {VALID_AUTHORITY_LEVELS}")
+            
+        # Validate Quality Scores
+        for score_f in ["quality_authenticity", "quality_document", "quality_metadata"]:
+            score_val = entry.get(score_f)
+            if score_val and score_val not in VALID_SCORE_VALUES:
+                errors.append(f"[{doc_id}] Invalid {score_f} '{score_val}'. Must be one of {VALID_SCORE_VALUES}")
             
         # Validate State & District mapping
         state = entry.get("state")
