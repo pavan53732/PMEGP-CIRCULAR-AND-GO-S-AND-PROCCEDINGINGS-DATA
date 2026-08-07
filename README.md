@@ -17,11 +17,20 @@ The repository is structured hierarchically to match official federal and state 
 ```
 PMEGP-CIRCULAR-AND-GOS-AND-PROCEEDINGS-DATA/
 ├── README.md                          # This file
+├── CHANGELOG.md                       # Chronological record of schema & curation changes
+├── CONTRIBUTING.md                    # How to add documents and open PRs
 ├── LICENSE                            # MIT License for compilation
 ├── docs/                              # Detailed documentation guidelines
-│   ├── COLLECTION_POLICY.md           # Permitted sources and privacy guidelines
-│   ├── DOCUMENT_CLASSIFICATION.md     # Directory structures and naming guidelines
-│   └── METADATA_SCHEMA.md             # Detailed metadata JSON & CSV schemas
+│   ├── collection_policy.md           # Permitted sources and privacy / PII rules
+│   ├── collection_guide.md            # Practical step-by-step collection methodology
+│   ├── document_classification.md     # Directory structure, Document ID scheme, district codes
+│   ├── metadata_schema.md             # Production-frozen JSON & CSV metadata spec
+│   ├── SOURCE_REGISTRY.md             # Index of every official source portal
+│   ├── MISSING_DOCUMENTS.md           # Gap registry of known missing documents
+│   └── ACQUISITION_DECISIONS.md        # Architecture & curation decision records (ADL)
+├── schemas/                           # Machine-readable JSON Schema definitions
+│   ├── document_metadata_schema.json  # Canonical metadata schema (v2.0.0)
+│   └── document_metadata_example.json # Real-world example entry
 ├── central-government/                # Central / National-level guidelines
 │   ├── msme/                          # Ministry of MSME guidelines, circulars, notifications
 │   └── kvic/                          # KVIC Head Office circulars, advisories, EDP training norms
@@ -46,11 +55,14 @@ PMEGP-CIRCULAR-AND-GOS-AND-PROCEEDINGS-DATA/
 ├── banks/                             # Standard lending terms and commercial banks directives
 ├── metadata/                          # Complete search indices
 │   ├── documents.json                 # Searchable Master JSON database
-│   └── documents.csv                  # Master Spreadsheet database for Excel/Pandas
+│   ├── documents.csv                  # Master Spreadsheet database for Excel/Pandas
+│   └── collection_status.json         # Per-category expected/collected counts
 ├── scripts/                           # Python administration scripts
-│   ├── download/                      # Document scrapers and crawlers
+│   ├── download/                      # Document scrapers and crawlers (planned)
 │   ├── validate/                      # Schema validators and integrity checkers
-│   └── metadata/                      # Interactive metadata generation CLI tools
+│   ├── metadata/                      # Interactive metadata generation CLI tool
+│   └── setup_repository.py            # One-shot scaffolder for the full directory tree
+├── .github/                           # GitHub Issue & PR templates
 └── index/                             # Local query indexes and cache files
 ```
 
@@ -157,6 +169,24 @@ python3 scripts/validate/update_readme.py
 
 ---
 
-## 6. License
+## 6. Documentation Index
+
+| Document | Purpose |
+|---|---|
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to add documents, the standard contribution workflow, and PR guidelines. |
+| [CHANGELOG.md](CHANGELOG.md) | Chronological record of schema versions, structural changes, and document acquisitions. |
+| [docs/collection_policy.md](docs/collection_policy.md) | Scope of collection, permitted sources, and the PII redaction protocol. |
+| [docs/collection_guide.md](docs/collection_guide.md) | Practical step-by-step methodology for collecting documents (web, RTI, physical). |
+| [docs/document_classification.md](docs/document_classification.md) | Directory structure mapping, Document ID scheme, and the 26 AP district slugs/codes. |
+| [docs/metadata_schema.md](docs/metadata_schema.md) | Production-frozen metadata spec: status taxonomy, provenance, relationships, quality scores. |
+| [docs/SOURCE_REGISTRY.md](docs/SOURCE_REGISTRY.md) | Registry of every official source portal (Central, AP State, 26 district portals). |
+| [docs/MISSING_DOCUMENTS.md](docs/MISSING_DOCUMENTS.md) | Gap registry of known missing documents and target collection dates. |
+| [docs/ACQUISITION_DECISIONS.md](docs/ACQUISITION_DECISIONS.md) | Architecture & Curation Decision Records (AD-0001 onwards). |
+| [schemas/document_metadata_schema.json](schemas/document_metadata_schema.json) | Machine-readable JSON Schema (v2.0.0) — enforced by the validator. |
+| [schemas/document_metadata_example.json](schemas/document_metadata_example.json) | Real-world example entry pulled from the archive. |
+
+---
+
+## 7. License
 
 This curated archive database structure, search indexing files, and administrative scripts are licensed under the [MIT License](LICENSE). Individual government documents are subject to administrative public domain copyright standards of India.
