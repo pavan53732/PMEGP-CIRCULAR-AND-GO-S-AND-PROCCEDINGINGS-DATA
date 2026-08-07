@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-KVIC-2022-0001",
+  "source_url": "https://www.kviconline.gov.in/pmegpeportal/dashboard/notification/PMEGP_Guidelines_Certified_2022_3.pdf",
+  "download_timestamp": "2026-08-07T22:58:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "c0296d2ca9cde7cc39af004e3880764a47a8709ebb44c6fcad23c60933f1ee84",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of kviconline.gov.in PMEGP e-portal. 43 pages, 977 KB, 145 PMEGP mentions. Digital-native PDF with selectable text. This is the KVIC-published certified copy of the PMEGP guidelines for 2022-23, distinct from the MoMSME O.M. (IN-MSME-2022-0001) which approved the continuation. Same content as IN-MSME-2023-0001 but published by KVIC rather than MoMSME, with a different pagination (43 vs 49 pages). Cross-references the May 2022 O.M."
+}

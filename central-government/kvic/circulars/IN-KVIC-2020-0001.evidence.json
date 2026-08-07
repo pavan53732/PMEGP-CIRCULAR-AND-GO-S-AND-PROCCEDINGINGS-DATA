@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-KVIC-2020-0001",
+  "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Simplification of PMEGP proceduredt06.05.2020.pdf",
+  "download_timestamp": "2026-08-07T23:01:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "67a06512b422b42b504880d80690cd995591ea5138e6a7d90abfe7bc776d51d8",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of kviconline.gov.in PMEGP e-portal. 9 pages, 592 KB. Scanned image PDF - OCR'd with tesseract eng+tel (companion _ocr.pdf saved). OCR confirms KVIC Directorate of PMEGP letterhead, Date 06.07.2020 (filename says 06.05.2020), 19 PMEGP mentions. Date set to 2020-05-06 per filename."
+}

@@ -7,5 +7,18 @@
   "sha256": "e18e9c7ad35d8947296c794a3d5ee281ad05386a97060d349d5469ac6e0e86f3",
   "verified_by": "pavan53732",
   "acquisition_state": "CURATED",
-  "notes": "Verified via Wayback Machine snapshot of msme.gov.in. 1 page, 762 KB. Scanned image PDF (CamScanner) - no selectable text, so PMEGP keyword count is 0 via pdftotext. Date and reference number inferred from filename (Modifications_PMEGP_30092014 = 30 September 2014). Quality_document=C because it is a scanned image with no selectable text. Quality_authenticity=B because it is hosted on the official MSME portal but is a scan without digital signature. Would benefit from OCR processing (tesseract eng+tel) per docs/collection_guide.md section 5."
+  "notes": "Verified via Wayback Machine snapshot of msme.gov.in. 1 page, 762 KB. Scanned image PDF (CamScanner) - no selectable text, so PMEGP keyword count is 0 via pdftotext. Date and reference number inferred from filename (Modifications_PMEGP_30092014 = 30 September 2014). Quality_document=C because it is a scanned image with no selectable text. Quality_authenticity=B because it is hosted on the official MSME portal but is a scan without digital signature. Would benefit from OCR processing (tesseract eng+tel) per docs/collection_guide.md section 5.",
+  "ocr_processed": true,
+  "ocr_engine": "tesseract 5.5.0",
+  "ocr_languages": "eng+tel",
+  "ocr_pipeline": "pdftoppm (300 DPI) -> tesseract -> pdfunite",
+  "ocr_timestamp": "2026-08-08T00:00:00Z",
+  "ocr_output_file": "IN-MSME-2014-0001_ocr.pdf",
+  "ocr_quality": "ocr_done",
+  "ocr_stats": {
+    "word_count": 258,
+    "pmegp_mentions": 5,
+    "char_count": 1616
+  },
+  "ocr_text_preview": "No. PMEGP? Policy/3/2014\n\nGovernment of India\nMinistry of Micro, Small& Medium Enterprises\n(PMEGP Section)\nUdyog Bhavan, New Delhi-110011\nDate: - 20 .09.2014\n\nTo,\n\nThe Chief Executive Officer,\nKhadi and Village Industries Commission (KVIC),\nGramodaya, 3 Irla Road,\nVile Parle (West),\nMumbai- 400056\n\nSubject:- PMEGP - Modifications in the operational guidelines — reg.\nSir,\n\n| am directed to refer to your letter no. Dy.CEO(PMEGP/IT/DMC/EcR/EZ/\nmodifications/2014/396 dt.12.9.2014 on the above mentioned subject and to say\nthat while examining the proposal for modification in the operation guidelines in\nconsultation with Integrated Finance Wing, the IF-Wing observed that “the interest\naccrued cn margin money being given to the KVIC and then onto the banks, both\nnodal and financing , should be ploughed back into the Scheme and treated as\navailable funds for the implementation of the scheme itself.”\n2.\nIn view of the above it is decided that the existing operation guidelines of\nPMEGP may be mo"
 }

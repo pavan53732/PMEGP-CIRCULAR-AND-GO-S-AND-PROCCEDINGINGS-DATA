@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-KVIC-2015-0001",
+  "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/23.11.2015 Adopting udyog Adhar memorandum for registering units online.pdf",
+  "download_timestamp": "2026-08-07T22:58:30Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "d5438ad315a98310062fb4e2fc2af78d1a4cf662d930cc7926083cf72c38d4fd",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of kviconline.gov.in PMEGP e-portal. 9 pages (some with parse errors), 4.4 MB, 5 PMEGP mentions in OCR'd text. Scanned image PDF - OCR'd with tesseract eng+tel. OCR text reveals: Date 23.11.2015, Reference No. PMEGP/RC/2015-16/, Subject: 'Adopting Udyog Aadhar Memorandum for registering PMEGP units online'. This is the Tier 1 priority #2 document from the acquisition roadmap (Udyam Portal registration O.M.). Udyog Aadhar was the predecessor to the current Udyam Registration portal (which replaced UAM in July 2020). An OCR'd companion file (_ocr.pdf) is saved alongside the original."
+}

@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-KVIC-2022-0002",
+  "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/PHYSICAL VERIFICATION OF PMEGP UNITS THROUGH GEO-TAGGING.pdf",
+  "download_timestamp": "2026-08-07T22:59:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "6e1f8fab7701da30372446ca8d88cd749adc0daf966d64f1ee7d494f86dad481",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of kviconline.gov.in PMEGP e-portal. 2 pages, 130 KB. Scanned image PDF - OCR'd with tesseract eng+tel (companion _ocr.pdf saved). OCR confirms: Date 10.02.2022, Reference No. PMEGP/BFL/PV/Geotag/2021-22, 12 PMEGP mentions. Subject: Physical verification of PMEGP units through geo-tagging."
+}

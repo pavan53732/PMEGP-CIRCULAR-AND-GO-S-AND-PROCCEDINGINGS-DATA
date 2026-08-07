@@ -21,7 +21,7 @@
     "label": "Central KVIC Circulars",
     "expected": 110,
     "verified_total": null,
-    "collected": 0
+    "collected": 6
   },
   "kvic_advisories": {
     "label": "Central KVIC Advisories",
@@ -33,7 +33,7 @@
     "label": "Central KVIC EDP Guidelines",
     "expected": 25,
     "verified_total": null,
-    "collected": 0
+    "collected": 2
   },
   "kvic_portal": {
     "label": "Central KVIC Portal Advisories",
