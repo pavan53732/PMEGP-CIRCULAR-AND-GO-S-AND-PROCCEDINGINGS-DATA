@@ -8,9 +8,6 @@ json_path = os.path.join(repo_root, "metadata", "documents.json")
 status_path = os.path.join(repo_root, "metadata", "collection_status.json")
 
 def get_category_key(path):
-    """
-    Maps relative file path to collection_status key
-    """
     if not path:
         return None
         
@@ -117,17 +114,29 @@ def update_status():
             unmapped += 1
             
     # Calculate totals
-    total_estimated = sum(item["estimated"] for item in status_db.values())
+    total_expected = sum(item["expected"] for item in status_db.values())
     total_collected = sum(item["collected"] for item in status_db.values())
     
-    completeness_percentage = (total_collected / total_estimated) * 100 if total_estimated > 0 else 0
+    # Calculate verified total sum
+    total_verified = 0
+    all_categories_verified = True
+    for item in status_db.values():
+        if item.get("verified_total") is not None:
+            total_verified += item["verified_total"]
+        else:
+            all_categories_verified = False
+            total_verified += item["expected"] # Fallback to expected for calculation
+            
+    # Use verified totals for percentage if fully verified, else fall back to planning estimate (expected)
+    denom = total_verified if all_categories_verified else total_expected
+    completeness_percentage = (total_collected / denom) * 100 if denom > 0 else 0
     
     # Write back
     with open(status_path, 'w', encoding='utf-8') as f:
         json.dump(status_db, f, indent=2, ensure_ascii=False)
         
-    print(f"[+] Completeness status updated: {total_collected} collected / {total_estimated} estimated.")
-    print(f"[+] Total completeness: {completeness_percentage:.2f}%")
+    print(f"[+] Completeness status updated: {total_collected} collected / {total_expected} expected (planning estimate).")
+    print(f"[+] Total completeness (planning fallback): {completeness_percentage:.2f}%")
     if unmapped > 0:
         print(f"[!] Warnings: {unmapped} unmapped file entries.")
         

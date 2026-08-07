@@ -37,38 +37,56 @@ def update_readme():
     with open(status_path, 'r', encoding='utf-8') as f:
         status_db = json.load(f)
         
-    total_estimated = sum(item["estimated"] for item in status_db.values())
+    total_expected = sum(item["expected"] for item in status_db.values())
     total_collected = sum(item["collected"] for item in status_db.values())
-    completeness = (total_collected / total_estimated) * 100 if total_estimated > 0 else 0
+    
+    # Calculate progress based on verified total if available, else expected
+    total_verified = 0
+    all_categories_verified = True
+    for item in status_db.values():
+        if item.get("verified_total") is not None:
+            total_verified += item["verified_total"]
+        else:
+            all_categories_verified = False
+            total_verified += item["expected"]
+            
+    denom = total_verified if all_categories_verified else total_expected
+    completeness = (total_collected / denom) * 100 if denom > 0 else 0
     
     progress_bar = make_progress_bar(completeness)
     
     # Generate Markdown status block
     lines = []
     lines.append("### Archive Collection Completeness")
-    lines.append(f"**Completeness Score: `{completeness:.2f}%`**")
-    lines.append(f"```text\n{progress_bar} {total_collected} / {total_estimated} documents collected\n```")
+    lines.append(f"**Completeness Score: `{completeness:.2f}%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*")
+    lines.append(f"```text\n{progress_bar} {total_collected} / {denom} documents collected\n```")
     lines.append("")
     lines.append("#### Completeness Breakdown by Official Source")
     lines.append("")
-    lines.append("| Authority / Source | Estimated | Collected | Status | Progress |")
-    lines.append("|---|---|---|---|---|")
+    lines.append("| Authority / Source | Expected (Planning) | Verified Total | Collected | Status | Progress |")
+    lines.append("|---|---|---|---|---|---|")
     
     # Sort or iterate through status sections
     for key, data in status_db.items():
         label = data["label"]
-        est = data["estimated"]
+        exp = data["expected"]
+        vt = data.get("verified_total")
         col = data["collected"]
-        pct = (col / est) * 100 if est > 0 else 0
+        
+        vt_label = str(vt) if vt is not None else "Pending Audit"
+        
+        # Base progress bar on verified total if it is set, otherwise fallback to expected
+        target_denom = vt if vt is not None else exp
+        pct = (col / target_denom) * 100 if target_denom > 0 else 0
         
         status_icon = "⏳ Pending"
         if col > 0:
             status_icon = "🟢 Active" if pct >= 100 else "🟡 In Progress"
             
         short_bar = make_progress_bar(pct, width=10)
-        lines.append(f"| {label} | {est} | {col} | {status_icon} | `{short_bar}` ({pct:.1f}%) |")
+        lines.append(f"| {label} | {exp} | {vt_label} | {col} | {status_icon} | `{short_bar}` ({pct:.1f}%) |")
         
-    lines.append(f"| **TOTAL ARCHIVE** | **{total_estimated}** | **{total_collected}** | **{'🟡 Curation Phase' if total_collected > 0 else '⏳ Pending'}** | `{progress_bar}` ({completeness:.2f}%) |")
+    lines.append(f"| **TOTAL ARCHIVE** | **{total_expected}** | **{total_verified if all_categories_verified else 'Audit Underway'}** | **{total_collected}** | **{'🟡 Curation Phase' if total_collected > 0 else '⏳ Pending'}** | `{progress_bar}` ({completeness:.2f}%) |")
     
     table_content = "\n".join(lines)
     
@@ -91,7 +109,7 @@ def update_readme():
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_readme_content)
         
-    print(f"[+] Successfully updated README.md statistics with {total_collected}/{total_estimated} completeness status!")
+    print(f"[+] Successfully updated README.md statistics with {total_collected}/{denom} completeness status!")
     return True
 
 if __name__ == "__main__":
