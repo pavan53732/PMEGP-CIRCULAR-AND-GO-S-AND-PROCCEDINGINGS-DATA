@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2018-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/SocioEconomicalSurvey2017-18.pdf",
+  "download_timestamp": "2026-08-07T23:35:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "8372260c292256d28cf56f36b8d095c6ee6e7f503ff23386d6c435fceec31f06",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket (HTTP 200, application/pdf). 324 pages, 4.0 MB. 2 PMEGP mentions. Earliest Socio-Economic Survey available on the AP Finance portal."
+}

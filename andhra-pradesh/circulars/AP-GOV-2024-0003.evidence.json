@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2024-0003",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio_Economic_Survey_2023-24.pdf",
+  "download_timestamp": "2026-08-07T23:36:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "bf4ff3988ba721bb603afb5fec7db738f7113b1d1bbdeb057a2295603fbaa7c0",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket. 421 pages, 77 MB (large file - future batch should consider compression with /screen setting or section-based splitting). 6 PMEGP mentions - highest among the historical surveys acquired. Likely contains district-wise PMEGP progress table for FY 2023-24 comparable to Annexure 6.4 in AP-GOV-2025-0001."
+}

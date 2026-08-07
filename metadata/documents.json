@@ -1572,5 +1572,271 @@
       "archive_url": null
     },
     "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2018-0001",
+    "title": "Andhra Pradesh Socio-Economic Survey 2017-18",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2018-03-15",
+    "reference_no": "FIN-SES-2017-18/AP",
+    "subject": "AP Socio-Economic Survey 2017-18 with Industries & Commerce section referencing PMEGP implementation",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industries",
+      "Andhra Pradesh",
+      "FY 2017-18",
+      "Finance"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/SocioEconomicalSurvey2017-18.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2018-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/SocioEconomicalSurvey2017-18.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "8372260c292256d28cf56f36b8d095c6ee6e7f503ff23386d6c435fceec31f06",
+      "original_filename": "SocioEconomicalSurvey2017-18.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2019-0001",
+    "title": "Andhra Pradesh Socio-Economic Survey 2018-19",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2019-03-15",
+    "reference_no": "FIN-SES-2018-19/AP",
+    "subject": "AP Socio-Economic Survey 2018-19 with Industries & Commerce section referencing PMEGP implementation",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industries",
+      "Andhra Pradesh",
+      "FY 2018-19",
+      "Finance"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/SocioEconomicalSurvey2018-19.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2019-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/SocioEconomicalSurvey2018-19.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "b79e47f1243cd278a7bb49b7e5c322b38bb7ee1f17e370774a32231038ecb9f2",
+      "original_filename": "SocioEconomicalSurvey2018-19.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2024-0003",
+    "title": "Andhra Pradesh Socio-Economic Survey 2023-24",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2024-02-15",
+    "reference_no": "FIN-SES-2023-24/AP",
+    "subject": "AP Socio-Economic Survey 2023-24 with 6 PMEGP mentions in the Industries & Commerce section, likely including district-wise PMEGP progress data for FY 2023-24",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industries",
+      "Andhra Pradesh",
+      "FY 2023-24",
+      "Finance",
+      "District Progress"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio_Economic_Survey_2023-24.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2024-0003.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio_Economic_Survey_2023-24.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "bf4ff3988ba721bb603afb5fec7db738f7113b1d1bbdeb057a2295603fbaa7c0",
+      "original_filename": "Socio_Economic_Survey_2023-24.pdf",
+      "archive_url": null
+    },
+    "relationships": [
+      {
+        "target_id": "AP-GOV-2025-0001",
+        "type": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AP-GOV-2023-0002",
+    "title": "Andhra Pradesh Socio-Economic Survey 2022-23",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2023-03-15",
+    "reference_no": "FIN-SES-2022-23/AP",
+    "subject": "AP Socio-Economic Survey 2022-23 with Industries & Commerce section. No direct PMEGP keyword matches but contains KVIB/MSME development data relevant to PMEGP state matching subsidy.",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industries",
+      "Andhra Pradesh",
+      "FY 2022-23",
+      "Finance"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio-Economic-Survey-2022-23.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2023-0002.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio-Economic-Survey-2022-23.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "2d678908091336b2baae9d3404799c6be2399188373ac6ca1cbb281d5b416001",
+      "original_filename": "Socio-Economic-Survey-2022-23.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2020-0001",
+    "title": "Andhra Pradesh Socio-Economic Survey 2019-20",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2020-03-15",
+    "reference_no": "FIN-SES-2019-20/AP",
+    "subject": "AP Socio-Economic Survey 2019-20 with Industries & Commerce section referencing PMEGP implementation during the early COVID-19 period",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industries",
+      "Andhra Pradesh",
+      "FY 2019-20",
+      "Finance",
+      "COVID-19"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio-Economic-Survey-2019-20.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2020-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio-Economic-Survey-2019-20.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "04c273027a25060cc8126ef26aaba006a607ac39fcdbb93e4d3dd9c6a5af8c2d",
+      "original_filename": "Socio-Economic-Survey-2019-20.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2021-0001",
+    "title": "Andhra Pradesh Socio-Economic Survey 2020-21",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2021-03-15",
+    "reference_no": "FIN-SES-2020-21/AP",
+    "subject": "AP Socio-Economic Survey 2020-21 covering the first full fiscal year of COVID-19 impact on PMEGP implementation",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industries",
+      "Andhra Pradesh",
+      "FY 2020-21",
+      "Finance",
+      "COVID-19"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio_Economic_Survey_2020-21.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2021-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio_Economic_Survey_2020-21.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "a8532d8e68c6fa5ff3489fd34857bfc2662636ed3d2873c9cff6c78a56a50e39",
+      "original_filename": "Socio_Economic_Survey_2020-21.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2022-0002",
+    "title": "Andhra Pradesh Socio-Economic Survey 2021-22",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2022-03-15",
+    "reference_no": "FIN-SES-2021-22/AP",
+    "subject": "AP Socio-Economic Survey 2021-22 covering the first year of the 15th Finance Commission PMEGP cycle (2021-22 to 2025-26) approved by the May 2022 O.M.",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industries",
+      "Andhra Pradesh",
+      "FY 2021-22",
+      "Finance",
+      "15th Finance Commission"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio_Economic_Survey_2021-22.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2022-0002.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio_Economic_Survey_2021-22.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "dfff25ca2a00b8b8b4e4b71a37b718f76d19f684e1eebe2a3336a58b97637332",
+      "original_filename": "Socio_Economic_Survey_2021-22.pdf",
+      "archive_url": null
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2022-0001",
+        "type": "references"
+      }
+    ]
   }
 ]

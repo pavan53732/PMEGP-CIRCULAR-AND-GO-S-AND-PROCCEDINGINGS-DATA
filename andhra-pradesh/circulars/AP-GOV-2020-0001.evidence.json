@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2020-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/Socio-Economic-Survey-2019-20.pdf",
+  "download_timestamp": "2026-08-07T23:40:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "04c273027a25060cc8126ef26aaba006a607ac39fcdbb93e4d3dd9c6a5af8c2d",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket. 345 pages, 35 MB (large - compression/split recommended for future batch). 2 PMEGP mentions."
+}
