@@ -46,6 +46,8 @@ VALID_TYPES = [
 
 VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended"]
 
+VALID_QUALITY_SCORES = ["A", "B", "C", "D", "X"]
+
 def validate():
     print("=" * 60)
     print("   PMEGP ARCHIVE - METADATA INTEGRITY VALIDATOR")
@@ -107,7 +109,7 @@ def validate():
             errors.append(f"[{doc_id}] Document ID format is invalid. Expected [TERRITORY]-[AGENCY]-[YEAR]-[SEQUENCE] (e.g. AP-COI-2024-0012)")
             
         # Check required fields
-        required_fields = ["title", "type", "issuing_authority", "department", "state", "date", "reference_no", "subject", "keywords", "status", "file_path", "provenance"]
+        required_fields = ["title", "type", "issuing_authority", "department", "state", "date", "reference_no", "subject", "keywords", "status", "quality_score", "file_path", "provenance"]
         for field in required_fields:
             val = entry.get(field)
             if val is None or val == "" or (isinstance(val, list) and not val):
@@ -122,6 +124,11 @@ def validate():
         status = entry.get("status")
         if status and status not in VALID_STATUSES:
             errors.append(f"[{doc_id}] Invalid status '{status}'. Must be one of {VALID_STATUSES}")
+            
+        # Validate Quality Score
+        quality = entry.get("quality_score")
+        if quality and quality not in VALID_QUALITY_SCORES:
+            errors.append(f"[{doc_id}] Invalid quality_score '{quality}'. Must be one of {VALID_QUALITY_SCORES}")
             
         # Validate State & District mapping
         state = entry.get("state")

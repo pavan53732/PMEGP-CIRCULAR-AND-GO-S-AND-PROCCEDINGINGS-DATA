@@ -48,6 +48,8 @@ VALID_TYPES = [
 
 VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended"]
 
+VALID_QUALITY_SCORES = ["A", "B", "C", "D", "X"]
+
 def calculate_sha256(filepath):
     sha256_hash = hashlib.sha256()
     with open(filepath, "rb") as f:
@@ -74,7 +76,7 @@ def save_csv_db(db):
     headers = [
         "document_id", "title", "type", "issuing_authority", "department", 
         "state", "district", "date", "reference_no", "subject", "keywords", 
-        "source_url", "status", "file_path",
+        "source_url", "status", "quality_score", "file_path",
         "prov_downloaded_from", "prov_download_date", "prov_downloaded_by", 
         "prov_sha256", "prov_original_filename", "prov_archive_url",
         "relationships_list"
@@ -259,6 +261,16 @@ def main():
     if not status or status not in VALID_STATUSES:
         status = "Active"
         
+    print("\nCollection Quality Score levels:")
+    print("  A : Official PDF from primary government source, complete, digitally signed")
+    print("  B : Official PDF from primary/secondary source, complete, high quality (unsigned)")
+    print("  C : Official scan from government source, lower quality/readability")
+    print("  D : Secondary-source copy awaiting primary source verification")
+    print("  X : Rejected/unverifiable (flagged for review)")
+    quality_score = input("Select Quality Score (A, B, C, D, X): ").strip().upper()
+    while quality_score not in VALID_QUALITY_SCORES:
+         quality_score = input("Invalid score. Select from (A, B, C, D, X): ").strip().upper()
+        
     collector = input("\nDownloaded By (your github username, default 'pavan53732'): ").strip()
     if not collector:
         collector = "pavan53732"
@@ -307,6 +319,7 @@ def main():
         "keywords": keywords,
         "source_url": source_url,
         "status": status,
+        "quality_score": quality_score,
         "file_path": final_file_path,
         "provenance": {
             "downloaded_from": source_url,

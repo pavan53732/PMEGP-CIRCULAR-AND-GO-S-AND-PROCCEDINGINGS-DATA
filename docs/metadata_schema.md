@@ -1,6 +1,6 @@
 # PMEGP Archive Metadata Schema & Provenance Standards
 
-To ensure that the archive acts as a trustworthy, academic, and administrative resource, every document must be systematically indexed and fully validated. This file specifies the advanced JSON and CSV schemas, which track relationships, status progression, and file provenance.
+To ensure that the archive acts as a trustworthy, academic, and administrative resource, every document must be systematically indexed and fully validated. This file specifies the final, production-frozen JSON and CSV schemas, which track relationships, status progression, file provenance, and collection quality.
 
 ---
 
@@ -44,7 +44,19 @@ Administrative policies are deeply interconnected. To capture relationships, eac
 
 ---
 
-## 4. Master Schema Specification
+## 4. Collection Quality Score
+
+To make the quality of the archive measurable rather than just the quantity, every document must be audited and assigned a **Collection Quality Score** under the `quality_score` field:
+
+*   **`A`**: Official PDF downloaded directly from the primary government source, complete, and digitally signed if applicable.
+*   **`B`**: Official PDF downloaded from a primary or certified government portal, complete and high quality (not signed).
+*   **`C`**: Scanned PDF or document of lower readability, but from an official source.
+*   **`D`**: Copy obtained from secondary sources (unverified mirrors, researchers) awaiting primary source validation.
+*   **`X`**: Rejected, unreadable, or unverifiable document (automatically flagged for deletion).
+
+---
+
+## 5. Master Schema Specification
 
 The following table defines the final, production-ready schema:
 
@@ -63,13 +75,14 @@ The following table defines the final, production-ready schema:
 | **Keywords** | `keywords` | `keywords` | Array/String | **Yes** | Tags |
 | **Source URL** | `source_url` | `source_url` | String/Null | **Yes** | Verified download link |
 | **Status** | `status` | `status` | String | **Yes** | `Active`, `Superseded`, `Withdrawn`, `Cancelled`, `Merged`, `Amended` |
+| **Quality Score** | `quality_score` | `quality_score` | String | **Yes** | `A`, `B`, `C`, `D`, `X` |
 | **File Path** | `file_path` | `file_path` | String | **Yes** | Relative path in repo |
 | **Provenance** | `provenance` | *(Nested/Prefix)* | Object | **Yes** | Source, Date, Collector, Hash, Original Name |
 | **Relationships** | `relationships` | *N/A* | Array | **Yes** | Direct policy relations |
 
 ---
 
-## 5. Production Examples
+## 6. Production Examples
 
 ### JSON Representation:
 ```json
@@ -94,6 +107,7 @@ The following table defines the final, production-ready schema:
     ],
     "source_url": "https://slbcorissa.com/wp-content/uploads/2018/09/PMEGP-Scheme-Guidelines.pdf",
     "status": "Superseded",
+    "quality_score": "B",
     "file_path": "central-government/msme/guidelines/IN-MSME-2018-0001.pdf",
     "provenance": {
       "downloaded_from": "https://slbcorissa.com/wp-content/uploads/2018/09/PMEGP-Scheme-Guidelines.pdf",
