@@ -2901,5 +2901,99 @@
       "archive_url": "https://web.archive.org/web/2024id_/https://kviconline.gov.in/pmegpeportal/dashboard/notification/Exemption%20of%20EDP%20training%20dt%2004.05.2020.pdf"
     },
     "relationships": []
+  },
+  {
+    "document_id": "IN-MSME-2023-0002",
+    "title": "O.M. No. PMEGP/UdhyamReg./01/2023: Revised PMEGP Guidelines Making Udyam Registration Mandatory (07.12.2023)",
+    "type": "Notification",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2023-12-07",
+    "reference_no": "O.M. No. PMEGP/UdhyamReg./01/2023",
+    "subject": "Office Memorandum issued in supersession of O.M. No. PMEGP/Policy/09/2021 dated 13.05.2022, revising PMEGP guidelines to make Udyam Registration mandatory for all new PMEGP units before physical verification and margin money adjustment",
+    "keywords": [
+      "PMEGP",
+      "Udyam Registration",
+      "Mandatory",
+      "Revised Guidelines",
+      "December 2023",
+      "Office Memorandum",
+      "Supersession",
+      "Physical Verification",
+      "Margin Money",
+      "15th Finance Commission"
+    ],
+    "source_url": "https://www.msme.gov.in/sites/default/files/Revisedguidelines07.12.2023.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "central-government/msme/guidelines/IN-MSME-2023-0002.pdf",
+    "provenance": {
+      "downloaded_from": "https://www.msme.gov.in/sites/default/files/Revisedguidelines07.12.2023.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "90e9d90f6c61ee8c81dc6125a24cc3389e391987cd404c0d81f085a96e9d21fb",
+      "original_filename": "Revisedguidelines07.12.2023.pdf",
+      "archive_url": "https://web.archive.org/web/20251207041051/https://www.msme.gov.in/sites/default/files/Revisedguidelines07.12.2023.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2022-0001",
+        "type": "supersedes"
+      },
+      {
+        "target_id": "IN-MSME-2023-0001",
+        "type": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "IN-MSME-2018-0003",
+    "title": "Guidelines for Second Financial Assistance under PMEGP for Expansion of Existing Successful PMEGP/MUDRA Units (MSME Canonical Version)",
+    "type": "Guidelines",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2018-08-01",
+    "reference_no": "MSME-PMEGP-2nd-Loan-Guidelines/2018",
+    "subject": "MSME-published canonical version of the 2nd loan guidelines under PMEGP for upgradation of existing successful PMEGP/MUDRA units, approved under the 14th Finance Commission continuation (2017-18 to 2019-20) with Rs. 5,500 Crore outlay",
+    "keywords": [
+      "PMEGP",
+      "2nd Loan",
+      "Second Financial Assistance",
+      "Upgradation",
+      "MUDRA",
+      "MSME",
+      "Guidelines",
+      "14th Finance Commission",
+      "2017-18",
+      "2019-20"
+    ],
+    "source_url": "https://www.msme.gov.in/sites/default/files/2ndloanenglishguidelines.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "central-government/msme/guidelines/IN-MSME-2018-0003.pdf",
+    "provenance": {
+      "downloaded_from": "https://www.msme.gov.in/sites/default/files/2ndloanenglishguidelines.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "7a77ecef89147eb632aedb177d6c4eb92b4c1469d4c18ed0f37dfa9f5a14cef4",
+      "original_filename": "2ndloanenglishguidelines.pdf",
+      "archive_url": "https://web.archive.org/web/20251207041051/https://www.msme.gov.in/sites/default/files/2ndloanenglishguidelines.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2018-0002",
+        "type": "references"
+      }
+    ]
   }
 ]

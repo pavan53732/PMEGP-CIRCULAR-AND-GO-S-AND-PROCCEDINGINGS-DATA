@@ -75,16 +75,16 @@ The status table below is automatically compiled and updated from the master dat
 <!-- STATUS_TABLE_START -->
 
 ### Archive Collection Completeness
-**Completeness Score: `2.81%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
+**Completeness Score: `2.89%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
 ```text
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 75 / 2665 documents collected
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 77 / 2665 documents collected
 ```
 
 #### Completeness Breakdown by Official Source
 
 | Authority / Source | Expected (Planning) | Verified Total | Collected | Status | Progress |
 |---|---|---|---|---|---|
-| Central MSME Guidelines | 15 | Pending Audit | 6 | 🟡 In Progress | `[████░░░░░░]` (40.0%) |
+| Central MSME Guidelines | 15 | Pending Audit | 8 | 🟡 In Progress | `[█████░░░░░]` (53.3%) |
 | Central MSME Circulars | 50 | Pending Audit | 2 | 🟡 In Progress | `[░░░░░░░░░░]` (4.0%) |
 | Central MSME Notifications | 40 | Pending Audit | 7 | 🟡 In Progress | `[█░░░░░░░░░]` (17.5%) |
 | Central KVIC Circulars | 110 | Pending Audit | 33 | 🟡 In Progress | `[███░░░░░░░]` (30.0%) |
@@ -108,7 +108,7 @@ The status table below is automatically compiled and updated from the master dat
 | District DLRC Meeting Reports | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | District Lead Bank Guidelines | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | Commercial Banks Circulars | 100 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
-| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **75** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (2.81%) |
+| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **77** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (2.89%) |
 
 <!-- STATUS_TABLE_END -->
 

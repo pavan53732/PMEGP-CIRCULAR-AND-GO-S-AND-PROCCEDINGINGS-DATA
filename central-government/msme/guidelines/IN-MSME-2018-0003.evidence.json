@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-MSME-2018-0003",
+  "source_url": "https://www.msme.gov.in/sites/default/files/2ndloanenglishguidelines.pdf",
+  "download_timestamp": "2026-08-08T00:30:30Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "7a77ecef89147eb632aedb177d6c4eb92b4c1469d4c18ed0f37dfa9f5a14cef4",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of msme.gov.in. 5 pages, 1.2 MB, 12 PMEGP mentions. This is the MSME-published canonical version of the 2nd loan guidelines, distinct from the earlier KVIC version (IN-MSME-2018-0002) which was sourced from a different Wayback snapshot. References the 14th Finance Commission continuation (2017-18 to 2019-20) with Rs. 5,500 Crore outlay and notes 4,66,471 PMEGP units set up up to 31.3.2018. Date set to 2018-08-01 as approximate based on content references."
+}
