@@ -1,122 +1,178 @@
 {
   "_schema_info": {
     "name": "PMEGP Document Metadata Schema",
-    "version": "1.0.0",
-    "description": "Standardized metadata format for all PMEGP-related documents in this archive. Every document MUST have a corresponding JSON file with these fields.",
-    "last_updated": "2026-08-07"
+    "version": "2.0.0",
+    "description": "Production-frozen metadata schema for every document in the PMEGP archive. This JSON Schema mirrors the canonical spec in docs/metadata_schema.md and is enforced by scripts/validate/validate_metadata.py. Every PDF committed to the repository MUST have a corresponding entry in metadata/documents.json that conforms to this schema.",
+    "last_updated": "2026-08-08",
+    "changelog": [
+      "v2.0.0 (2026-08-08): Re-aligned with production schema. Replaced legacy PMEGP-AP-YYYY-NNN ID pattern, category/sub_category enums, language/pages/file_format/ocr_status fields, and verification_status with the production field set (document_id, type, issuing_authority, department, state, district, date, reference_no, subject, keywords, source_url, status, source_authority_level, quality_authenticity, quality_document, quality_metadata, file_path, provenance, relationships). Added independent multi-dimensional quality scoring (A/B/C) and acquisition-state aware provenance block.",
+      "v1.0.0 (2026-08-07): Initial legacy schema with category folders 01-07 and PMEGP-AP-YYYY-NNN IDs. Superseded."
+    ]
   },
   "type": "object",
   "required": [
     "document_id",
     "title",
-    "date_issued",
+    "type",
     "issuing_authority",
-    "category",
-    "sub_category",
+    "department",
+    "state",
     "district",
-    "subject_keywords",
+    "date",
+    "reference_no",
+    "subject",
+    "keywords",
     "source_url",
+    "status",
+    "source_authority_level",
+    "quality_authenticity",
+    "quality_document",
+    "quality_metadata",
     "file_path",
-    "language",
-    "pages",
-    "file_format",
-    "ocr_status"
+    "provenance",
+    "relationships"
   ],
   "properties": {
     "document_id": {
       "type": "string",
-      "pattern": "^PMEGP-AP-\\d{4}-\\d{3}$",
-      "description": "Unique identifier. Format: PMEGP-AP-YYYY-NNN. Year = year of issue, NNN = sequential number within that year across all categories."
+      "pattern": "^[A-Z_]+-[A-Z]+-\\d{4}-\\d{4}$",
+      "description": "Unique primary key across the archive. Format: [TERRITORY]-[AGENCY_CODE]-[YEAR]-[SEQUENCE]. Examples: 'IN-MSME-2018-0001' (Central MSME), 'AP-COI-2024-0012' (AP Commissioner of Industries), 'AP_ANA-DIC-2024-0002' (Anakapalli DIC). See docs/document_classification.md for the full Territory / Agency code list."
     },
     "title": {
       "type": "string",
       "minLength": 10,
-      "description": "Full official title of the document as it appears on the document itself. Preserve original capitalization."
+      "description": "Full official title of the document as it appears on the cover page. Preserve original capitalization and do not abbreviate."
     },
-    "date_issued": {
+    "type": {
       "type": "string",
-      "format": "date",
-      "description": "Date the document was officially issued, in YYYY-MM-DD format. If only month/year is known, use YYYY-MM-01."
+      "enum": ["GO", "Circular", "Notification", "Proceeding", "Advisory", "Letter", "Minutes", "Agenda", "Report", "Guidelines", "Instruction", "Other"],
+      "description": "Document type. Must be one of the controlled vocabulary values enforced by the validator."
     },
     "issuing_authority": {
       "type": "string",
-      "description": "Full name of the issuing authority. Examples: 'Commissioner of Industries, Andhra Pradesh', 'KVIC Regional Office, Vijayawada', 'District Collector, Anantapur'."
+      "description": "Full name of the issuing agency. Examples: 'Ministry of Micro, Small and Medium Enterprises', 'Commissioner of Industries', 'State Level Bankers\\' Committee'."
     },
-    "category": {
+    "department": {
       "type": "string",
-      "enum": ["01", "02", "03", "04", "05", "06", "07"],
-      "description": "Category code mapping to the folder structure: 01=AP Govt GOs, 02=KVIC Letters, 03=Commissioner Proceedings, 04=DIC Proceedings, 05=Collector Proceedings, 06=SLBC/DLCC, 07=Miscellaneous."
+      "description": "Administrative division. Examples: 'MSME', 'Industries', 'Finance', 'Lead Bank'."
     },
-    "sub_category": {
+    "state": {
       "type": "string",
-      "enum": ["GO", "Circular", "Letter", "Proceeding", "Memo", "Minutes", "Notification", "Press_Release", "Court_Order", "RTI_Response", "Other"],
-      "description": "Specific document type within the broader category."
+      "enum": ["Central", "Andhra Pradesh"],
+      "description": "Jurisdictional level. 'Central' for national-level documents and 'Andhra Pradesh' for state-level documents. Per AD-0001 in docs/ACQUISITION_DECISIONS.md, no other states are within scope."
     },
     "district": {
       "type": ["string", "null"],
-      "description": "Name of the relevant district if the document is district-specific. Use null for state-level or national-level documents. Must match the official district name from the AP districts list."
+      "description": "Official district name if district-specific (e.g. 'Anakapalli'), otherwise null for state/national-level documents. The slug form must match one of the 26 AP districts listed in docs/document_classification.md or the validator will reject the entry."
     },
-    "subject_keywords": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Official date the document was issued, in YYYY-MM-DD format. If only month/year is known, use YYYY-MM-01 and add a note in provenance.notes."
+    },
+    "reference_no": {
+      "type": "string",
+      "description": "Official reference / file number as printed on the document. Examples: 'Rc.No. 12/PMEGP/2024', 'No. 01/2023-PMEGP'."
+    },
+    "subject": {
+      "type": "string",
+      "description": "One-sentence summary of the document's content. Used as the primary display text in search results."
+    },
+    "keywords": {
       "type": "array",
       "items": { "type": "string" },
       "minItems": 1,
-      "description": "Searchable keywords that describe the document's subject matter. Include both English and transliterated Telugu terms where relevant. Examples: ['subsidy', 'margin_money', 'target_allocation', 'application_deadline']."
+      "description": "Searchable keyword tags. Always include 'PMEGP' as the first keyword. Use Title Case for multi-word tags. Example: ['PMEGP', 'Subsidy', 'EDP Training', 'Bank Accounts']."
     },
     "source_url": {
       "type": ["string", "null"],
       "format": "uri",
-      "description": "Original URL where the document was found. Use null if obtained via RTI, physical collection, or offline source."
+      "description": "Direct URL to the original download location. Use null only if the document was collected via RTI / physical archive and has no digital source. Per AD-0002, secondary official mirrors (e.g. SLBC Odisha) are acceptable when the primary portal is offline."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended"],
+      "description": "Legal / administrative status of the document. 'Active' = currently in force, 'Superseded' = replaced by a newer document (link via relationships.superseded_by), 'Withdrawn' = revoked without replacement, 'Cancelled' = voided, 'Merged' = combined into a new policy, 'Amended' = modified by a subsequent order (link via relationships.amended_by)."
+    },
+    "source_authority_level": {
+      "type": "string",
+      "enum": ["PRIMARY", "SECONDARY", "MIRROR", "ARCHIVED"],
+      "description": "Reliability tier of the sourcing channel. PRIMARY = direct from issuing authority portal, SECONDARY = official government/bank mirror, MIRROR = third-party public mirror, ARCHIVED = physical / RTI / scanned offline record."
+    },
+    "quality_authenticity": {
+      "type": "string",
+      "enum": ["A", "B", "C"],
+      "description": "Document authenticity grade. A = cryptographically signed, officially stamped, or gazette-published; B = unsigned but complete official publication on a primary/certified portal; C = copy with minor missing seal/signature context but textually authentic."
+    },
+    "quality_document": {
+      "type": "string",
+      "enum": ["A", "B", "C"],
+      "description": "Document format / legibility grade. A = digital-native PDF with fully selectable text; B = high-quality OCR or clean scan; C = low-quality scan, partially blurred/skewed but textually complete."
+    },
+    "quality_metadata": {
+      "type": "string",
+      "enum": ["A", "B", "C"],
+      "description": "Metadata completeness grade. A = all fields populated, deep keywords, active relationships; B = essential fields complete with standard keywords and verified provenance; C = basic fields populated, missing non-essential relationship/provenance links."
     },
     "file_path": {
       "type": "string",
-      "description": "Relative path to the document file within this repository. Should start with the category folder name. Example: '01_ap_government_gos_and_circulars/PMEGP-AP-2024-001_subsidy_rate_revision.pdf'."
+      "description": "Relative path to the PDF inside this repository, using forward slashes. Must match the directory mapping in docs/document_classification.md. Example: 'central-government/msme/guidelines/IN-MSME-2018-0001.pdf'. The validator will fail if the file does not exist at this path."
     },
-    "language": {
-      "type": "string",
-      "enum": ["en", "te", "bilingual"],
-      "description": "Primary language of the document: 'en' for English, 'te' for Telugu, 'bilingual' for documents containing both languages."
+    "provenance": {
+      "type": "object",
+      "required": ["downloaded_from", "download_date", "downloaded_by", "sha256", "original_filename"],
+      "description": "Tamper-evident provenance block. The SHA-256 hash acts as both an integrity seal and a duplicate detector (the validator rejects two entries with identical hashes).",
+      "properties": {
+        "downloaded_from": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Exact live URL the file was fetched from. Null only for offline / RTI collections."
+        },
+        "download_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the file was downloaded, in YYYY-MM-DD format."
+        },
+        "downloaded_by": {
+          "type": "string",
+          "description": "GitHub username or identity of the collector. Used for audit attribution."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 cryptographic hash of the PDF file (lowercase hex, 64 chars). Computed by scripts/metadata/generate_metadata.py at ingestion time."
+        },
+        "original_filename": {
+          "type": "string",
+          "description": "Filename as originally served by the source portal, before being renamed to match the document_id convention."
+        },
+        "archive_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "Permanent web archive URL (e.g. Wayback Machine snapshot) if available. Null if not archived."
+        }
+      }
     },
-    "pages": {
-      "type": "integer",
-      "minimum": 1,
-      "description": "Total number of pages in the document."
-    },
-    "file_format": {
-      "type": "string",
-      "enum": ["pdf", "jpg", "png", "html", "txt"],
-      "description": "Format of the uploaded file."
-    },
-    "file_size_kb": {
-      "type": "integer",
-      "description": "File size in kilobytes. Optional but recommended for tracking archive growth."
-    },
-    "ocr_status": {
-      "type": "string",
-      "enum": ["original", "ocr_done", "needs_manual_review", "not_applicable"],
-      "description": "OCR processing status. 'original' = native digital PDF (text already selectable), 'ocr_done' = OCR processing completed, 'needs_manual_review' = OCR output has errors, 'not_applicable' = non-scanned document (HTML, text)."
-    },
-    "notes": {
-      "type": "string",
-      "description": "Additional context: why this document is significant, related document IDs, discrepancies in the original, etc."
-    },
-    "related_document_ids": {
+    "relationships": {
       "type": "array",
-      "items": { "type": "string" },
-      "description": "List of other document_ids in this archive that are directly related (e.g., a GO and its implementing circular, or a letter and its reply)."
-    },
-    "collected_by": {
-      "type": "string",
-      "description": "Name or username of the person who collected and uploaded this document."
-    },
-    "date_uploaded": {
-      "type": "string",
-      "format": "date",
-      "description": "Date this document was added to the archive, in YYYY-MM-DD format."
-    },
-    "verification_status": {
-      "type": "string",
-      "enum": ["verified", "unverified", "disputed"],
-      "description": "Whether the document has been verified against the original source. 'verified' = confirmed match, 'unverified' = not yet checked, 'disputed' = content or authenticity concerns raised."
+      "description": "Direct policy relationships to other documents in the archive. Use to model supersession, amendments, and citation links. Empty array if no relationships exist.",
+      "items": {
+        "type": "object",
+        "required": ["target_id", "type"],
+        "properties": {
+          "target_id": {
+            "type": "string",
+            "pattern": "^[A-Z_]+-[A-Z]+-\\d{4}-\\d{4}$",
+            "description": "document_id of the related document. Must already exist in the archive."
+          },
+          "type": {
+            "type": "string",
+            "enum": ["supersedes", "superseded_by", "amends", "amended_by", "references", "referenced_by"],
+            "description": "Relationship type. 'supersedes' = this document replaces the target; 'superseded_by' = this document is replaced by the target; 'amends' / 'amended_by' = modification link; 'references' / 'referenced_by' = citation link."
+          }
+        }
+      }
     }
-  }
+  },
+  "additionalProperties": false
 }

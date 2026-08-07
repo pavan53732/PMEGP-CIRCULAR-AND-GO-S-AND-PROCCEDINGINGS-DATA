@@ -1,31 +1,40 @@
 {
-  "document_id": "PMEGP-AP-2024-001",
-  "title": "Revised Margin Money Subsidy Rates under PMEGP for FY 2024-25",
-  "date_issued": "2024-04-15",
-  "issuing_authority": "Commissioner of Industries, Government of Andhra Pradesh",
-  "category": "03",
-  "sub_category": "Proceeding",
+  "document_id": "IN-MSME-2023-0001",
+  "title": "Guidelines on Prime Minister's Employment Generation Programme (PMEGP)",
+  "type": "Guidelines",
+  "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+  "department": "MSME",
+  "state": "Central",
   "district": null,
-  "subject_keywords": [
-    "subsidy",
-    "margin_money",
-    "rate_revision",
-    "general_category",
-    "special_category",
-    "FY_2024-25"
+  "date": "2023-03-16",
+  "reference_no": "No. PMEGP/UdhyamReg./01/2023",
+  "subject": "Official guidelines detailing project subsidies, bank accounts operation, EDP training, and monitoring of PMEGP",
+  "keywords": [
+    "PMEGP",
+    "Guidelines",
+    "Subsidy",
+    "EDP Training",
+    "Bank Accounts"
   ],
-  "source_url": "https://industries.ap.gov.in/proceedings/2024/pmegp-subsidy-revision",
-  "file_path": "03_commissioner_of_industries_proceedings/PMEGP-AP-2024-001_revised_subsidy_rates.pdf",
-  "language": "en",
-  "pages": 3,
-  "file_format": "pdf",
-  "file_size_kb": 245,
-  "ocr_status": "original",
-  "notes": "Revises margin money subsidy rates from 25% to 30% for general category in rural areas. Supersedes proceeding PMEGP-AP-2023-089.",
-  "related_document_ids": [
-    "PMEGP-AP-2023-089"
-  ],
-  "collected_by": "pavan53732",
-  "date_uploaded": "2024-05-10",
-  "verification_status": "verified"
+  "source_url": "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2023/03/2023031677.pdf",
+  "status": "Active",
+  "source_authority_level": "PRIMARY",
+  "quality_authenticity": "B",
+  "quality_document": "A",
+  "quality_metadata": "A",
+  "file_path": "central-government/msme/guidelines/IN-MSME-2023-0001.pdf",
+  "provenance": {
+    "downloaded_from": "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2023/03/2023031677.pdf",
+    "download_date": "2026-08-07",
+    "downloaded_by": "pavan53732",
+    "sha256": "a7ff0868274fef902c67830fd442c34dec5488ee9547cb47352e87fe954e2f7a",
+    "original_filename": "2023031677.pdf",
+    "archive_url": null
+  },
+  "relationships": [
+    {
+      "target_id": "IN-MSME-2018-0001",
+      "type": "supersedes"
+    }
+  ]
 }
