@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-COI-2020-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/11thprc/VolumeII-2.pdf",
+  "download_timestamp": "2026-08-07T18:32:03Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "cc406262d7356bb2142bf2938baf81fcabd70f6687665c1e454c8f14a9d1efc2",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified against Finance Department of Andhra Pradesh secure portal. Official guidelines outlining Industries Department technical duties and administrative coordination with DRDA for starting micro-enterprises and PMEGP units (303 pages)."
+}

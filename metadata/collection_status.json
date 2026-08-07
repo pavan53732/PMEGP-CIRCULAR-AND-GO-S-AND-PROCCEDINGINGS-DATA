@@ -69,7 +69,7 @@
     "label": "AP Commissioner Instructions",
     "expected": 100,
     "verified_total": null,
-    "collected": 0
+    "collected": 1
   },
   "kvic_state_circulars": {
     "label": "AP KVIC State Circulars",

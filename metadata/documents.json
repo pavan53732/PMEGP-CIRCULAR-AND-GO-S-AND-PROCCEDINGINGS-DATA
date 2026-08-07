@@ -220,5 +220,40 @@
       "archive_url": null
     },
     "relationships": []
+  },
+  {
+    "document_id": "AP-COI-2020-0001",
+    "title": "Andhra Pradesh Industries Department Technical Cadre Duties & DRDA Coordination Guidelines",
+    "type": "Instruction",
+    "issuing_authority": "Commissioner of Industries",
+    "department": "Industries",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2020-11-08",
+    "reference_no": "FIN-COI-ESTT/2020",
+    "subject": "Official guidelines outlining Industries Department technical duties and administrative coordination with DRDA for starting micro-enterprises and PMEGP units",
+    "keywords": [
+      "PMEGP",
+      "DRDA",
+      "Industries Department",
+      "Technical Cadre",
+      "Andhra Pradesh"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/11thprc/VolumeII-2.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "andhra-pradesh/commissioner-of-industries/instructions/AP-COI-2020-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/11thprc/VolumeII-2.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "cc406262d7356bb2142bf2938baf81fcabd70f6687665c1e454c8f14a9d1efc2",
+      "original_filename": "VolumeII-2.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]

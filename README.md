@@ -63,9 +63,9 @@ The status table below is automatically compiled and updated from the master dat
 <!-- STATUS_TABLE_START -->
 
 ### Archive Collection Completeness
-**Completeness Score: `0.23%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
+**Completeness Score: `0.26%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
 ```text
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 6 / 2665 documents collected
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7 / 2665 documents collected
 ```
 
 #### Completeness Breakdown by Official Source
@@ -83,7 +83,7 @@ The status table below is automatically compiled and updated from the master dat
 | AP State Circulars & Memos | 80 | Pending Audit | 1 | 🟡 In Progress | `[░░░░░░░░░░]` (1.2%) |
 | AP Commissioner Proceedings | 450 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | AP Commissioner Circulars | 150 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
-| AP Commissioner Instructions | 100 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP Commissioner Instructions | 100 | Pending Audit | 1 | 🟡 In Progress | `[░░░░░░░░░░]` (1.0%) |
 | AP KVIC State Circulars | 95 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | AP KVIC State Letters | 180 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | AP KVIC Review Agendas/Minutes | 60 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
@@ -96,7 +96,7 @@ The status table below is automatically compiled and updated from the master dat
 | District DLRC Meeting Reports | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | District Lead Bank Guidelines | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | Commercial Banks Circulars | 100 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
-| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **6** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (0.23%) |
+| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **7** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (0.26%) |
 
 <!-- STATUS_TABLE_END -->
 
