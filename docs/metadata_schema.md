@@ -72,11 +72,24 @@ To perform a professional, granular audit of document quality, the single qualit
 ### C. Metadata Completeness (`quality_metadata`)
 *   **`A`**: All fields are fully populated, with deep subject analysis, robust keywords, and active relationship mapping.
 *   **`B`**: Essential fields are complete, with standard keywords and verified provenance.
-*   **`C`**: Basic metadata populated, missing non-essential provenance or relationship linkages.
+*   **`C`**: Basic metadata populated, missing non-essential relationship/provenance links.
 
 ---
 
-## 6. Master Schema Specification
+## 6. Document Acquisition States (Repository Lifecycle)
+
+To separate the **document's legal status** from its **repository acquisition lifecycle**, we track the workflow state of each file in its evidence record:
+
+*   **`DISCOVERED`**: Document has been identified and cataloged but not yet downloaded.
+*   **`DOWNLOADED`**: File has been downloaded locally but awaiting formal verification.
+*   **`VERIFIED`**: PDF integrity, reference numbers, dates, and PII redactiveness have been checked.
+*   **`CURATED`**: Formally indexed, metadata mapped, and committed into the main repository branch.
+*   **`REJECTED`**: Document failed verification (corrupted PDF, duplicate, or unverified unofficial content).
+*   **`REPLACED`**: A superior digital native copy has been found and substituted for the current file.
+
+---
+
+## 7. Master Schema Specification
 
 The following table defines the final, production-ready schema:
 
@@ -101,11 +114,11 @@ The following table defines the final, production-ready schema:
 | **Metadata Completeness** | `quality_metadata` | `quality_metadata` | String | **Yes** | `A`, `B`, `C` |
 | **File Path** | `file_path` | `file_path` | String | **Yes** | Relative path in repo |
 | **Provenance** | `provenance` | *(Nested/Prefix)* | Object | **Yes** | Source, Date, Collector, Hash, Original Name |
-| **Relationships** | `relationships` | *N/A* | Array | **Yes** | Direct policy relations |
+| **Relationships** | `relationships` | *N/A* | Array | **Yes** | Direct policy relationships |
 
 ---
 
-## 7. Production Examples
+## 8. Production Examples
 
 ### JSON Representation:
 ```json
