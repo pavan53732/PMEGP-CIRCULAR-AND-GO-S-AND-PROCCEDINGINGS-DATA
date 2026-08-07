@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2025-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/AP_Socio_Economic_Survey_2024_25.pdf",
+  "download_timestamp": "2026-08-07T13:35:18Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "2edd48d1485bd8a64eb45689eaf96933da6cc655e6602187b81aa7a73eab5971",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified against Finance Department of Andhra Pradesh S3 secure gateway. Complete survey containing PMEGP targets and performance metrics (465 pages)."
+}

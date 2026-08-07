@@ -15,7 +15,7 @@
     "label": "Central MSME Notifications",
     "expected": 40,
     "verified_total": null,
-    "collected": 0
+    "collected": 1
   },
   "kvic_circulars": {
     "label": "Central KVIC Circulars",
@@ -51,7 +51,7 @@
     "label": "AP State Circulars & Memos",
     "expected": 80,
     "verified_total": null,
-    "collected": 0
+    "collected": 1
   },
   "ap_coi_proceedings": {
     "label": "AP Commissioner Proceedings",

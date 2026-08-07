@@ -78,5 +78,75 @@
         "type": "supersedes"
       }
     ]
+  },
+  {
+    "document_id": "IN-MSME-2026-0001",
+    "title": "Ministry of MSME Annual Report 2025-26: PMEGP Target and Performance Releases",
+    "type": "Notification",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2026-05-27",
+    "reference_no": "MSME-AR-2025-26/PMEGP",
+    "subject": "National and state-wise physical and financial target allocations and achievements for PMEGP for FY 2025-26",
+    "keywords": [
+      "PMEGP",
+      "Annual Report",
+      "Targets",
+      "MSME",
+      "Disbursements"
+    ],
+    "source_url": "https://www.msme.gov.in/static/uploads/2026/05/1bfda06b460e72543530b40817573495.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "central-government/msme/notifications/IN-MSME-2026-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://www.msme.gov.in/static/uploads/2026/05/1bfda06b460e72543530b40817573495.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "57651e6dac38e8c270213ffa3b1023fcf3b9b009b45c521fe3c616987b50cd5a",
+      "original_filename": "1bfda06b460e72543530b40817573495.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2025-0001",
+    "title": "Andhra Pradesh Socio Economic Survey 2024-25: Industry and PMEGP State Reviews",
+    "type": "Circular",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2025-02-28",
+    "reference_no": "FIN-SES-2024-25/AP",
+    "subject": "State-level industrial achievements, targets, and PMEGP performance reviews for FY 2024-25",
+    "keywords": [
+      "PMEGP",
+      "Socio Economic Survey",
+      "Industry",
+      "Finance",
+      "Andhra Pradesh"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/AP_Socio_Economic_Survey_2024_25.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "andhra-pradesh/circulars/AP-GOV-2025-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/index-docs/AP_Socio_Economic_Survey_2024_25.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "2edd48d1485bd8a64eb45689eaf96933da6cc655e6602187b81aa7a73eab5971",
+      "original_filename": "AP_Socio_Economic_Survey_2024_25.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]
