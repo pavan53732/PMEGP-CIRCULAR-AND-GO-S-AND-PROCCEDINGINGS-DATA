@@ -30,5 +30,37 @@
       "archive_url": null
     },
     "relationships": []
+  },
+  {
+    "document_id": "IN-SLBC-2024-0001",
+    "title": "166th SLBC Meeting Final Report: PMEGP Performance and Credit Flow Reviews",
+    "type": "Report",
+    "issuing_authority": "State Level Bankers' Committee",
+    "department": "Lead Bank",
+    "state": "Central",
+    "district": null,
+    "date": "2024-08-12",
+    "reference_no": "SLBC/166-MTG/2024",
+    "subject": "Review of PMEGP target allocations and bank credit flows as of Q1 FY 2024-25",
+    "keywords": [
+      "PMEGP",
+      "SLBC",
+      "Credit Flow",
+      "Bank Performance",
+      "Targets"
+    ],
+    "source_url": "https://slbckarnataka.com/userfiles/slbc/166th%20SLBC%20meeting%20FINAL%2012082024.pdf",
+    "status": "Active",
+    "quality_score": "B",
+    "file_path": "slbc/reports/SLBC-REP-2024-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://slbckarnataka.com/userfiles/slbc/166th%20SLBC%20meeting%20FINAL%2012082024.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "0a61689df449726db77d70f10567685f0b5200883ba696b5bc45758eb775e711",
+      "original_filename": "166th SLBC meeting FINAL 12082024.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]
