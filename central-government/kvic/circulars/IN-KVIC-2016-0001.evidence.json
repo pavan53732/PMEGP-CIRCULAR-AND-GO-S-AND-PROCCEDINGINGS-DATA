@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-KVIC-2016-0001",
+  "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Committee for settlement of PMEGP claims pertaining to period prior to 2015-16.pdf",
+  "download_timestamp": "2026-08-08T00:00:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "82567434c0481a91a3621138b7a27d4c04694c4ed580ff77f66621e902d4aa7c",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Acquired via Wayback Machine snapshot of kviconline.gov.in. Scanned image - OCR processed with tesseract eng+tel (companion _ocr.pdf saved)."
+}
