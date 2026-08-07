@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2023-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2023-24/Volume-III-16.pdf",
+  "download_timestamp": "2026-08-07T22:31:30Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "89f75e692d5fce373be7481310bff1593658f1d1fd09235e6266e97addddeb53",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket (HTTP 200, application/pdf). 82 pages. Contains Major Head 105 Khadi & Village Industries allocations to AP KVIB (PMEGP implementing channel) and MSME development programmes. Smallest of the budget volumes (772 KB)."
+}

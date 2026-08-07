@@ -45,7 +45,7 @@
     "label": "AP Government Orders (GOs)",
     "expected": 120,
     "verified_total": null,
-    "collected": 4
+    "collected": 6
   },
   "ap_state_circulars": {
     "label": "AP State Circulars & Memos",

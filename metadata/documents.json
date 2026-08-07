@@ -656,5 +656,87 @@
         "type": "references"
       }
     ]
+  },
+  {
+    "document_id": "AP-GOV-2023-0001",
+    "title": "Andhra Pradesh Budget Volume III-16: Industries & Commerce Department Demand-wise Allocations for FY 2023-24",
+    "type": "GO",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2023-02-15",
+    "reference_no": "AP-BUD-VOL-III-16-IC-2023-24",
+    "subject": "Annual budget demand-wise allocations for the Industries & Commerce Department including Major Head 105 Khadi & Village Industries (KVIB) and MSME development programmes that channel PMEGP state matching subsidy",
+    "keywords": [
+      "PMEGP",
+      "Budget",
+      "Industries & Commerce",
+      "Khadi",
+      "Village Industries",
+      "KVIB",
+      "MSME",
+      "Volume III",
+      "Demand Allocations",
+      "Andhra Pradesh",
+      "FY 2023-24"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2023-24/Volume-III-16.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/government-orders/AP-GOV-2023-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2023-24/Volume-III-16.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "89f75e692d5fce373be7481310bff1593658f1d1fd09235e6266e97addddeb53",
+      "original_filename": "Volume-III-16.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2022-0001",
+    "title": "Andhra Pradesh Budget Volume III-16: Industries & Commerce Department Demand-wise Allocations for FY 2022-23",
+    "type": "GO",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2022-02-15",
+    "reference_no": "AP-BUD-VOL-III-16-IC-2022-23",
+    "subject": "Annual budget demand-wise allocations for the Industries & Commerce Department including Major Head 105 Khadi & Village Industries (KVIB) and MSME development programmes that channel PMEGP state matching subsidy",
+    "keywords": [
+      "PMEGP",
+      "Budget",
+      "Industries & Commerce",
+      "Khadi",
+      "Village Industries",
+      "KVIB",
+      "MSME",
+      "Volume III",
+      "Demand Allocations",
+      "Andhra Pradesh",
+      "FY 2022-23"
+    ],
+    "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2022-23/Volume-III-16.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/government-orders/AP-GOV-2022-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2022-23/Volume-III-16.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "23cc0f0acbb5e1a57240abf6179777fcbda170111008e216ecb880b78aeba093",
+      "original_filename": "Volume-III-16.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]

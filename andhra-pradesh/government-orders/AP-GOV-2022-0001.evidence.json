@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2022-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2022-23/Volume-III-16.pdf",
+  "download_timestamp": "2026-08-07T22:31:25Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "23cc0f0acbb5e1a57240abf6179777fcbda170111008e216ecb880b78aeba093",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket (HTTP 200, application/pdf). 2.3 MB. Contains Major Head 105 Khadi & Village Industries allocations to AP KVIB (PMEGP implementing channel) and MSME development programmes. First budget of the current AP government."
+}
