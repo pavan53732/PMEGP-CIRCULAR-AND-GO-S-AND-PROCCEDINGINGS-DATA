@@ -1309,5 +1309,107 @@
       "archive_url": "https://web.archive.org/web/20251107182054/https://udyamregistration.gov.in/docs/OM_regarding_inclusion_of_Traders02072021.pdf"
     },
     "relationships": []
+  },
+  {
+    "document_id": "IN-KVIC-2023-0001",
+    "title": "PMEGP Circular: Adobe Scan 24 Jul 2023",
+    "type": "Circular",
+    "issuing_authority": "Khadi and Village Industries Commission",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2023-07-24",
+    "reference_no": "PMEGP/P",
+    "subject": "PMEGP operational circular issued by KVIC Directorate (Adobe Scan 24 Jul 2023.pdf)",
+    "keywords": [
+      "PMEGP",
+      "KVIC",
+      "Circular",
+      "2023"
+    ],
+    "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Adobe Scan 24 Jul 2023.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "C",
+    "file_path": "central-government/kvic/circulars/IN-KVIC-2023-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Adobe Scan 24 Jul 2023.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "d3693db05750d8c59cc4a0c9030ea13ab38d1666a6c603b335d6f495309b1b01",
+      "original_filename": "Adobe Scan 24 Jul 2023.pdf",
+      "archive_url": "https://web.archive.org/web/2024id_/https://kviconline.gov.in/pmegpeportal/dashboard/notification/Adobe%20Scan%2024%20Jul%202023.pdf"
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "IN-KVIC-2020-0003",
+    "title": "PMEGP Circular: Online Edp",
+    "type": "Circular",
+    "issuing_authority": "Khadi and Village Industries Commission",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2020-01-01",
+    "reference_no": "PMEGP/BFL/EDP/D",
+    "subject": "PMEGP operational circular issued by KVIC Directorate (Online EDP.pdf)",
+    "keywords": [
+      "PMEGP",
+      "KVIC",
+      "Circular",
+      "2020"
+    ],
+    "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Online EDP.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "C",
+    "file_path": "central-government/kvic/circulars/IN-KVIC-2020-0003.pdf",
+    "provenance": {
+      "downloaded_from": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Online EDP.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "4ea0227cf7c6ae76efb0368791b8ca749e314a8594df3f5aa088b064da9c6a9a",
+      "original_filename": "Online EDP.pdf",
+      "archive_url": "https://web.archive.org/web/2024id_/https://kviconline.gov.in/pmegpeportal/dashboard/notification/Online%20EDP.pdf"
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "IN-KVIC-2020-0004",
+    "title": "PMEGP Circular: Circular Edp 13 Sep 21",
+    "type": "Circular",
+    "issuing_authority": "Khadi and Village Industries Commission",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2020-01-01",
+    "reference_no": "PMEGP/2020",
+    "subject": "PMEGP operational circular issued by KVIC Directorate (Circular_EDP_13_Sep_21.pdf)",
+    "keywords": [
+      "PMEGP",
+      "KVIC",
+      "Circular",
+      "2020"
+    ],
+    "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Circular_EDP_13_Sep_21.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "C",
+    "file_path": "central-government/kvic/circulars/IN-KVIC-2020-0004.pdf",
+    "provenance": {
+      "downloaded_from": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Circular_EDP_13_Sep_21.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "d31d4b4783db1f898532fa9baa88dfe9fe571f70c4a042dc2b4168a6ecd32f1a",
+      "original_filename": "Circular_EDP_13_Sep_21.pdf",
+      "archive_url": "https://web.archive.org/web/2024id_/https://kviconline.gov.in/pmegpeportal/dashboard/notification/Circular_EDP_13_Sep_21.pdf"
+    },
+    "relationships": []
   }
 ]
