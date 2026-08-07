@@ -62,17 +62,41 @@ The status table below is automatically compiled and updated from the master dat
 
 <!-- STATUS_TABLE_START -->
 
-| Section / Category | Folder Path | Count | Status |
-|---|---|---|---|
-| **Central Govt (MSME)** | `central-government/msme/` | 1 | 🟢 Active |
-| **Central Govt (KVIC)** | `central-government/kvic/` | 0 | ⏳ Pending |
-| **AP State Govt Orders** | `andhra-pradesh/government-orders/` | 0 | ⏳ Pending |
-| **AP Commissioner of Industries** | `andhra-pradesh/commissioner-of-industries/` | 0 | ⏳ Pending |
-| **AP KVIC State Office** | `andhra-pradesh/kvic-state-office/` | 0 | ⏳ Pending |
-| **SLBC AP Records** | `slbc/` | 0 | ⏳ Pending |
-| **District Level (26 Districts)** | `districts/` | 0 | ⏳ Pending |
-| **Banks Rules & Guidelines** | `banks/` | 0 | ⏳ Pending |
-| **Total Curated Documents** | **-** | **1** | **🟢 Active Curation** |
+### Archive Collection Completeness
+**Completeness Score: `0.04%`**
+```text
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 1 / 2665 documents collected
+```
+
+#### Completeness Breakdown by Official Source
+
+| Authority / Source | Estimated | Collected | Status | Progress |
+|---|---|---|---|---|
+| Central MSME Guidelines | 15 | 1 | 🟡 In Progress | `[░░░░░░░░░░]` (6.7%) |
+| Central MSME Circulars | 50 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| Central MSME Notifications | 40 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| Central KVIC Circulars | 110 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| Central KVIC Advisories | 30 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| Central KVIC EDP Guidelines | 25 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| Central KVIC Portal Advisories | 20 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP Government Orders (GOs) | 120 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP State Circulars & Memos | 80 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP Commissioner Proceedings | 450 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP Commissioner Circulars | 150 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP Commissioner Instructions | 100 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP KVIC State Circulars | 95 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP KVIC State Letters | 180 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| AP KVIC Review Agendas/Minutes | 60 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| SLBC Meeting Agendas | 40 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| SLBC Meeting Minutes | 40 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| SLBC Monitoring Reports | 50 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| District Collector Proceedings | 130 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| District DIC Proceedings | 260 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| District DLCC Meeting Minutes | 260 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| District DLRC Meeting Reports | 130 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| District Lead Bank Guidelines | 130 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| Commercial Banks Circulars | 100 | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| **TOTAL ARCHIVE** | **2665** | **1** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (0.04%) |
 
 <!-- STATUS_TABLE_END -->
 

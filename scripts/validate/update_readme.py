@@ -1,77 +1,76 @@
 #!/usr/bin/env python3
 import os
 import json
+import re
 
 # Path references
 repo_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 json_path = os.path.join(repo_root, "metadata", "documents.json")
+status_path = os.path.join(repo_root, "metadata", "collection_status.json")
 readme_path = os.path.join(repo_root, "README.md")
+
+def make_progress_bar(percentage, width=30):
+    completed_chars = int((percentage / 100) * width)
+    remaining_chars = width - completed_chars
+    return "[" + "█" * completed_chars + "░" * remaining_chars + "]"
 
 def update_readme():
     print("=" * 60)
     print("   PMEGP ARCHIVE - README STATUS TABLE AUTO-UPDATER")
     print("=" * 60)
     
-    if not os.path.exists(json_path):
-        print(f"[-] Error: JSON Database not found at {json_path}")
+    # 1. Run collection status calculator first
+    status_script = os.path.join(repo_root, "scripts", "validate", "update_collection_status.py")
+    if os.path.exists(status_script):
+        print("[+] Syncing collection status counts first...")
+        os.system(f"python3 {status_script}")
+        
+    if not os.path.exists(status_path):
+        print(f"[-] Error: collection_status.json not found at {status_path}")
         return False
         
     if not os.path.exists(readme_path):
         print(f"[-] Error: README.md not found at {readme_path}")
         return False
         
-    # Load database
-    with open(json_path, 'r', encoding='utf-8') as f:
-        db = json.load(f)
+    # Load status data
+    with open(status_path, 'r', encoding='utf-8') as f:
+        status_db = json.load(f)
         
-    # Categories counts
-    counts = {
-        "central_msme": 0,
-        "central_kvic": 0,
-        "ap_state_govt": 0,
-        "ap_coi": 0,
-        "ap_kvic": 0,
-        "slbc": 0,
-        "districts": 0,
-        "banks": 0
-    }
+    total_estimated = sum(item["estimated"] for item in status_db.values())
+    total_collected = sum(item["collected"] for item in status_db.values())
+    completeness = (total_collected / total_estimated) * 100 if total_estimated > 0 else 0
     
-    for entry in db:
-        path = entry.get("file_path", "")
-        if path.startswith("central-government/msme"):
-            counts["central_msme"] += 1
-        elif path.startswith("central-government/kvic"):
-            counts["central_kvic"] += 1
-        elif path.startswith("andhra-pradesh/commissioner-of-industries"):
-            counts["ap_coi"] += 1
-        elif path.startswith("andhra-pradesh/kvic-state-office"):
-            counts["ap_kvic"] += 1
-        elif path.startswith("andhra-pradesh/"):
-            counts["ap_state_govt"] += 1
-        elif path.startswith("slbc"):
-            counts["slbc"] += 1
-        elif path.startswith("districts"):
-            counts["districts"] += 1
-        elif path.startswith("banks"):
-            counts["banks"] += 1
-
-    total_docs = len(db)
+    progress_bar = make_progress_bar(completeness)
     
-    # Generate Markdown Table
-    table_lines = [
-        "| Section / Category | Folder Path | Count | Status |",
-        "|---|---|---|---|",
-        f"| **Central Govt (MSME)** | `central-government/msme/` | {counts['central_msme']} | {'🟢 Active' if counts['central_msme'] > 0 else '⏳ Pending'} |",
-        f"| **Central Govt (KVIC)** | `central-government/kvic/` | {counts['central_kvic']} | {'🟢 Active' if counts['central_kvic'] > 0 else '⏳ Pending'} |",
-        f"| **AP State Govt Orders** | `andhra-pradesh/government-orders/` | {counts['ap_state_govt']} | {'🟢 Active' if counts['ap_state_govt'] > 0 else '⏳ Pending'} |",
-        f"| **AP Commissioner of Industries** | `andhra-pradesh/commissioner-of-industries/` | {counts['ap_coi']} | {'🟢 Active' if counts['ap_coi'] > 0 else '⏳ Pending'} |",
-        f"| **AP KVIC State Office** | `andhra-pradesh/kvic-state-office/` | {counts['ap_kvic']} | {'🟢 Active' if counts['ap_kvic'] > 0 else '⏳ Pending'} |",
-        f"| **SLBC AP Records** | `slbc/` | {counts['slbc']} | {'🟢 Active' if counts['slbc'] > 0 else '⏳ Pending'} |",
-        f"| **District Level (26 Districts)** | `districts/` | {counts['districts']} | {'🟢 Active' if counts['districts'] > 0 else '⏳ Pending'} |",
-        f"| **Banks Rules & Guidelines** | `banks/` | {counts['banks']} | {'🟢 Active' if counts['banks'] > 0 else '⏳ Pending'} |",
-        f"| **Total Curated Documents** | **-** | **{total_docs}** | **🟢 Active Curation** |"
-    ]
-    table_content = "\n".join(table_lines)
+    # Generate Markdown status block
+    lines = []
+    lines.append("### Archive Collection Completeness")
+    lines.append(f"**Completeness Score: `{completeness:.2f}%`**")
+    lines.append(f"```text\n{progress_bar} {total_collected} / {total_estimated} documents collected\n```")
+    lines.append("")
+    lines.append("#### Completeness Breakdown by Official Source")
+    lines.append("")
+    lines.append("| Authority / Source | Estimated | Collected | Status | Progress |")
+    lines.append("|---|---|---|---|---|")
+    
+    # Sort or iterate through status sections
+    for key, data in status_db.items():
+        label = data["label"]
+        est = data["estimated"]
+        col = data["collected"]
+        pct = (col / est) * 100 if est > 0 else 0
+        
+        status_icon = "⏳ Pending"
+        if col > 0:
+            status_icon = "🟢 Active" if pct >= 100 else "🟡 In Progress"
+            
+        short_bar = make_progress_bar(pct, width=10)
+        lines.append(f"| {label} | {est} | {col} | {status_icon} | `{short_bar}` ({pct:.1f}%) |")
+        
+    lines.append(f"| **TOTAL ARCHIVE** | **{total_estimated}** | **{total_collected}** | **{'🟡 Curation Phase' if total_collected > 0 else '⏳ Pending'}** | `{progress_bar}` ({completeness:.2f}%) |")
+    
+    table_content = "\n".join(lines)
     
     # Read README
     with open(readme_path, 'r', encoding='utf-8') as f:
@@ -92,9 +91,8 @@ def update_readme():
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_readme_content)
         
-    print(f"[+] Successfully updated README.md statistics with {total_docs} total documents!")
+    print(f"[+] Successfully updated README.md statistics with {total_collected}/{total_estimated} completeness status!")
     return True
 
 if __name__ == "__main__":
-    import re
     update_readme()

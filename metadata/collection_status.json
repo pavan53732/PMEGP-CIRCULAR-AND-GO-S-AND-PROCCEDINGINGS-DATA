@@ -1,0 +1,122 @@
+{
+  "msme_guidelines": {
+    "label": "Central MSME Guidelines",
+    "estimated": 15,
+    "collected": 1
+  },
+  "msme_circulars": {
+    "label": "Central MSME Circulars",
+    "estimated": 50,
+    "collected": 0
+  },
+  "msme_notifications": {
+    "label": "Central MSME Notifications",
+    "estimated": 40,
+    "collected": 0
+  },
+  "kvic_circulars": {
+    "label": "Central KVIC Circulars",
+    "estimated": 110,
+    "collected": 0
+  },
+  "kvic_advisories": {
+    "label": "Central KVIC Advisories",
+    "estimated": 30,
+    "collected": 0
+  },
+  "kvic_edp": {
+    "label": "Central KVIC EDP Guidelines",
+    "estimated": 25,
+    "collected": 0
+  },
+  "kvic_portal": {
+    "label": "Central KVIC Portal Advisories",
+    "estimated": 20,
+    "collected": 0
+  },
+  "ap_government_orders": {
+    "label": "AP Government Orders (GOs)",
+    "estimated": 120,
+    "collected": 0
+  },
+  "ap_state_circulars": {
+    "label": "AP State Circulars & Memos",
+    "estimated": 80,
+    "collected": 0
+  },
+  "ap_coi_proceedings": {
+    "label": "AP Commissioner Proceedings",
+    "estimated": 450,
+    "collected": 0
+  },
+  "ap_coi_circulars": {
+    "label": "AP Commissioner Circulars",
+    "estimated": 150,
+    "collected": 0
+  },
+  "ap_coi_instructions": {
+    "label": "AP Commissioner Instructions",
+    "estimated": 100,
+    "collected": 0
+  },
+  "kvic_state_circulars": {
+    "label": "AP KVIC State Circulars",
+    "estimated": 95,
+    "collected": 0
+  },
+  "kvic_state_letters": {
+    "label": "AP KVIC State Letters",
+    "estimated": 180,
+    "collected": 0
+  },
+  "kvic_state_review_meetings": {
+    "label": "AP KVIC Review Agendas/Minutes",
+    "estimated": 60,
+    "collected": 0
+  },
+  "slbc_agendas": {
+    "label": "SLBC Meeting Agendas",
+    "estimated": 40,
+    "collected": 0
+  },
+  "slbc_minutes": {
+    "label": "SLBC Meeting Minutes",
+    "estimated": 40,
+    "collected": 0
+  },
+  "slbc_reports": {
+    "label": "SLBC Monitoring Reports",
+    "estimated": 50,
+    "collected": 0
+  },
+  "districts_collector": {
+    "label": "District Collector Proceedings",
+    "estimated": 130,
+    "collected": 0
+  },
+  "districts_dic": {
+    "label": "District DIC Proceedings",
+    "estimated": 260,
+    "collected": 0
+  },
+  "districts_dlcc": {
+    "label": "District DLCC Meeting Minutes",
+    "estimated": 260,
+    "collected": 0
+  },
+  "districts_dlrc": {
+    "label": "District DLRC Meeting Reports",
+    "estimated": 130,
+    "collected": 0
+  },
+  "districts_lead_bank": {
+    "label": "District Lead Bank Guidelines",
+    "estimated": 130,
+    "collected": 0
+  },
+  "banks": {
+    "label": "Commercial Banks Circulars",
+    "estimated": 100,
+    "collected": 0
+  }
+}
