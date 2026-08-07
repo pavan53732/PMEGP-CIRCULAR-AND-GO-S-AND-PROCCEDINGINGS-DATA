@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-MSME-2014-0001",
+  "source_url": "https://msme.gov.in/sites/default/files/Modifications_PMEGP_30092014(1).pdf",
+  "download_timestamp": "2026-08-07T22:46:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "e18e9c7ad35d8947296c794a3d5ee281ad05386a97060d349d5469ac6e0e86f3",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of msme.gov.in. 1 page, 762 KB. Scanned image PDF (CamScanner) - no selectable text, so PMEGP keyword count is 0 via pdftotext. Date and reference number inferred from filename (Modifications_PMEGP_30092014 = 30 September 2014). Quality_document=C because it is a scanned image with no selectable text. Quality_authenticity=B because it is hosted on the official MSME portal but is a scan without digital signature. Would benefit from OCR processing (tesseract eng+tel) per docs/collection_guide.md section 5."
+}

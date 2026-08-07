@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-MSME-2008-0001",
+  "source_url": "https://msme.gov.in/sites/default/files/KVI_Policy_and_Establishment_Section_57_0.pdf",
+  "download_timestamp": "2026-08-07T22:45:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "7645217492064a2e0805828cef63a47ef811a25cc86da46b52132c529f9a56bd",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of msme.gov.in. 24 pages, 242 KB, 71 PMEGP mentions. Digital-native PDF with selectable text. This is the original PMEGP guidelines from the KVI Policy and Establishment Section, issued following the merger of PMRY and REGP effective 31.03.2008. Includes the PMEGP application form (pages 23-24). Different SHA-256 from IN-MSME-2018-0001 (the 2018 revised guidelines, 49 pages). Date set to 2008-08-01 as an approximate (PMRY/REGP ended 31.03.2008, PMEGP guidelines issued shortly after). Status=Superseded by IN-MSME-2018-0001. Quality_metadata=B because the exact issue date and reference number are inferred from content rather than printed."
+}

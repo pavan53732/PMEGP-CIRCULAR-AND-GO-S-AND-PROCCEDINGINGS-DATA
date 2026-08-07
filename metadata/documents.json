@@ -522,5 +522,139 @@
         "type": "references"
       }
     ]
+  },
+  {
+    "document_id": "IN-MSME-2008-0001",
+    "title": "Original PMEGP Guidelines: Introduction of Prime Minister's Employment Generation Programme by Merging PMRY and REGP (KVI Policy and Establishment Section)",
+    "type": "Guidelines",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2008-08-01",
+    "reference_no": "KVI-Policy/Section-57/PMEGP-2008",
+    "subject": "Original PMEGP scheme guidelines issued following the merger of PMRY and REGP effective 31.03.2008, establishing KVIC as the national nodal agency and defining subsidy rates, eligibility, and the application form",
+    "keywords": [
+      "PMEGP",
+      "Original Guidelines",
+      "2008",
+      "PMRY",
+      "REGP",
+      "Merger",
+      "KVIC",
+      "KVIB",
+      "DIC",
+      "Subsidy",
+      "Margin Money",
+      "Application Form",
+      "KVI Policy"
+    ],
+    "source_url": "https://msme.gov.in/sites/default/files/KVI_Policy_and_Establishment_Section_57_0.pdf",
+    "status": "Superseded",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "central-government/msme/guidelines/IN-MSME-2008-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://msme.gov.in/sites/default/files/KVI_Policy_and_Establishment_Section_57_0.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "7645217492064a2e0805828cef63a47ef811a25cc86da46b52132c529f9a56bd",
+      "original_filename": "KVI_Policy_and_Establishment_Section_57_0.pdf",
+      "archive_url": "https://web.archive.org/web/20251107182417/https://msme.gov.in/sites/default/files/KVI_Policy_and_Establishment_Section_57_0.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2018-0001",
+        "type": "superseded_by"
+      }
+    ]
+  },
+  {
+    "document_id": "IN-MSME-2014-0001",
+    "title": "Modifications in PMEGP Operational Guidelines (Circular dated 30.09.2014)",
+    "type": "Circular",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2014-09-30",
+    "reference_no": "PMEGP/Modifications/30092014",
+    "subject": "Modifications to the PMEGP operational guidelines issued on 30 September 2014, amending specific clauses of the ongoing scheme guidelines",
+    "keywords": [
+      "PMEGP",
+      "Modifications",
+      "Operational Guidelines",
+      "2014",
+      "Amendment",
+      "Circular",
+      "KVIC",
+      "MSME"
+    ],
+    "source_url": "https://msme.gov.in/sites/default/files/Modifications_PMEGP_30092014(1).pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "C",
+    "quality_metadata": "B",
+    "file_path": "central-government/msme/circulars/IN-MSME-2014-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://msme.gov.in/sites/default/files/Modifications_PMEGP_30092014(1).pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "e18e9c7ad35d8947296c794a3d5ee281ad05386a97060d349d5469ac6e0e86f3",
+      "original_filename": "Modifications_PMEGP_30092014.pdf",
+      "archive_url": "https://web.archive.org/web/20251107194919/https://msme.gov.in/sites/default/files/Modifications_PMEGP_30092014%281%29.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2008-0001",
+        "type": "amends"
+      }
+    ]
+  },
+  {
+    "document_id": "IN-MSME-2015-0001",
+    "title": "Modifications in the Negative List under PMEGP Operational Guidelines: Further Clarification (Circular dated 06.05.2015)",
+    "type": "Circular",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2015-05-06",
+    "reference_no": "PMEGP/Negative-List/Clarification/06052015",
+    "subject": "Further clarification on modifications to the negative list of activities not eligible under PMEGP, issued on 6 May 2015, building on the 30.09.2014 modifications circular",
+    "keywords": [
+      "PMEGP",
+      "Negative List",
+      "Clarification",
+      "2015",
+      "Modification",
+      "Operational Guidelines",
+      "Amendment",
+      "Excluded Activities"
+    ],
+    "source_url": "https://msme.gov.in/sites/default/files/Modifications in the negative list under operational guidelines-Further Clarification dtd.06.05.2015.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "C",
+    "quality_metadata": "B",
+    "file_path": "central-government/msme/circulars/IN-MSME-2015-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://msme.gov.in/sites/default/files/Modifications in the negative list under operational guidelines-Further Clarification dtd.06.05.2015.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "d6383951997733c96ce769488c6e8555f3726c9c809bd33be8e12f208d948797",
+      "original_filename": "Modifications in the negative list under operational guidelines-Further Clarification dtd.06.05.2015.pdf",
+      "archive_url": "https://web.archive.org/web/20251107194912/https://msme.gov.in/sites/default/files/Modifications%20in%20the%20negative%20list%20under%20operational%20guidelines-Further%20Clarification%20dtd.06.05.2015.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2014-0001",
+        "type": "references"
+      }
+    ]
   }
 ]

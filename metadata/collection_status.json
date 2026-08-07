@@ -3,13 +3,13 @@
     "label": "Central MSME Guidelines",
     "expected": 15,
     "verified_total": null,
-    "collected": 5
+    "collected": 6
   },
   "msme_circulars": {
     "label": "Central MSME Circulars",
     "expected": 50,
     "verified_total": null,
-    "collected": 0
+    "collected": 2
   },
   "msme_notifications": {
     "label": "Central MSME Notifications",
