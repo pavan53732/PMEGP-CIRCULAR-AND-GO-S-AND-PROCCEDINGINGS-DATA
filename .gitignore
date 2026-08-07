@@ -1,0 +1,45 @@
+# PMEGP Data Archive - Git Ignore
+
+# =========================
+# OS-generated files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Editor / IDE files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# =========================
+# Large unprocessed raw files
+# (Keep raw data in data_raw/ only if small;
+#  large files should be stored externally and linked)
+# =========================
+*.tmp
+*.bak
+
+# =========================
+# Credentials and tokens
+# =========================
+# NEVER commit tokens, API keys, or credentials
+*.pem
+*.key
+credentials.json
+secrets.json
+.env
