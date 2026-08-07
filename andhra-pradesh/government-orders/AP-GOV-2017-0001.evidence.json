@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2017-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2017-18/Volume-III-16.pdf",
+  "download_timestamp": "2026-08-07T23:45:45Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "894e640f32916def00d2f18df9dc08f7d69730434c0e3f4bca94047f119d58d7",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket. 40 pages, 3.9 MB. 3 Khadi mentions."
+}

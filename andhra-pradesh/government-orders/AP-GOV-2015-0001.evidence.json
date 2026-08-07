@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2015-0001",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2015-16/Volume-III-16.pdf",
+  "download_timestamp": "2026-08-07T23:45:15Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "e1435c1ec522d0a0d9ebb1765bde0082c38579f8dcd4c4df6783c948073a5a89",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket. 48 pages, 4.4 MB. 3 Khadi mentions."
+}

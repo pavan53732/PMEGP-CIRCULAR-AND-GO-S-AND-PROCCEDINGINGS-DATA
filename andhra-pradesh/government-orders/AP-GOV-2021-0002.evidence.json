@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2021-0002",
+  "source_url": "https://s3.ap-south-1.amazonaws.com/apfinance.gov.in/uploads/budget-volumes/2021-22/Volume-VII-1.pdf",
+  "download_timestamp": "2026-08-07T23:46:30Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "f6e702e3e45468c7f41410b3c90ba326c28b29c8542a2421f5e999868fb1060d",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in S3 bucket. 163 pages. 0 direct PMEGP mentions but covers the first year of the 15th Finance Commission PMEGP cycle."
+}
