@@ -183,5 +183,42 @@
       "archive_url": null
     },
     "relationships": []
+  },
+  {
+    "document_id": "AP-SLBC-2015-0001",
+    "title": "SLBC of Andhra Pradesh List of Certified Private ITIs and Training Institutes",
+    "type": "Report",
+    "issuing_authority": "State Level Bankers' Committee",
+    "department": "Lead Bank",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2015-12-17",
+    "reference_no": "SLBC/AP-ITI-DIR/2015",
+    "subject": "Directory of certified private Industrial Training Institutes (ITIs) for vocational and EDP training in Andhra Pradesh",
+    "keywords": [
+      "PMEGP",
+      "SLBC",
+      "ITI",
+      "Vocational Training",
+      "Financial Literacy",
+      "Visakhapatnam",
+      "Anakapalli"
+    ],
+    "source_url": "https://www.pmjdy.gov.in/files/Financial-Literacy/flc-bank/Private/Andhra-Pradesh.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "slbc/reports/AP-SLBC-2015-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://www.pmjdy.gov.in/files/Financial-Literacy/flc-bank/Private/Andhra-Pradesh.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "5491b2a500582a2dc41e464c5f9e4fdf926e88a9df769564a77d16ee482cf752",
+      "original_filename": "Andhra-Pradesh.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]
