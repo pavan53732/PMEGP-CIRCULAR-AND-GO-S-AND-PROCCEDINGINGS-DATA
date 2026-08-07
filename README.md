@@ -75,9 +75,9 @@ The status table below is automatically compiled and updated from the master dat
 <!-- STATUS_TABLE_START -->
 
 ### Archive Collection Completeness
-**Completeness Score: `2.33%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
+**Completeness Score: `2.63%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
 ```text
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 62 / 2665 documents collected
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 70 / 2665 documents collected
 ```
 
 #### Completeness Breakdown by Official Source
@@ -87,7 +87,7 @@ The status table below is automatically compiled and updated from the master dat
 | Central MSME Guidelines | 15 | Pending Audit | 6 | 🟡 In Progress | `[████░░░░░░]` (40.0%) |
 | Central MSME Circulars | 50 | Pending Audit | 2 | 🟡 In Progress | `[░░░░░░░░░░]` (4.0%) |
 | Central MSME Notifications | 40 | Pending Audit | 7 | 🟡 In Progress | `[█░░░░░░░░░]` (17.5%) |
-| Central KVIC Circulars | 110 | Pending Audit | 20 | 🟡 In Progress | `[█░░░░░░░░░]` (18.2%) |
+| Central KVIC Circulars | 110 | Pending Audit | 28 | 🟡 In Progress | `[██░░░░░░░░]` (25.5%) |
 | Central KVIC Advisories | 30 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | Central KVIC EDP Guidelines | 25 | Pending Audit | 2 | 🟡 In Progress | `[░░░░░░░░░░]` (8.0%) |
 | Central KVIC Portal Advisories | 20 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
@@ -108,7 +108,7 @@ The status table below is automatically compiled and updated from the master dat
 | District DLRC Meeting Reports | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | District Lead Bank Guidelines | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | Commercial Banks Circulars | 100 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
-| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **62** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (2.33%) |
+| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **70** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (2.63%) |
 
 <!-- STATUS_TABLE_END -->
 
