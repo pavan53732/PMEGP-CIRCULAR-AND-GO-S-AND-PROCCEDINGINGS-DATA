@@ -21,7 +21,7 @@
     "label": "Central KVIC Circulars",
     "expected": 110,
     "verified_total": null,
-    "collected": 9
+    "collected": 10
   },
   "kvic_advisories": {
     "label": "Central KVIC Advisories",
@@ -45,7 +45,7 @@
     "label": "AP Government Orders (GOs)",
     "expected": 120,
     "verified_total": null,
-    "collected": 6
+    "collected": 9
   },
   "ap_state_circulars": {
     "label": "AP State Circulars & Memos",

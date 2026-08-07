@@ -1411,5 +1411,166 @@
       "archive_url": "https://web.archive.org/web/2024id_/https://kviconline.gov.in/pmegpeportal/dashboard/notification/Circular_EDP_13_Sep_21.pdf"
     },
     "relationships": []
+  },
+  {
+    "document_id": "IN-KVIC-2020-0005",
+    "title": "PMEGP Circular: Circular Issued",
+    "type": "Circular",
+    "issuing_authority": "Khadi and Village Industries Commission",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2020-01-01",
+    "reference_no": "PMEGP/P",
+    "subject": "Exemption ofCOVID vears viz",
+    "keywords": [
+      "PMEGP",
+      "KVIC",
+      "Circular",
+      "2020"
+    ],
+    "source_url": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Circular - issued.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "central-government/kvic/circulars/IN-KVIC-2020-0005.pdf",
+    "provenance": {
+      "downloaded_from": "https://kviconline.gov.in/pmegpeportal/dashboard/notification/Circular - issued.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "e03cba44673e328f6ecb8d8ed5135238e7bcf9b262db0fffa07add7c2e379079",
+      "original_filename": "Circular - issued.pdf",
+      "archive_url": "https://web.archive.org/web/2024id_/https://kviconline.gov.in/pmegpeportal/dashboard/notification/Circular%20-%20issued.pdf"
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2024-0002",
+    "title": "Andhra Pradesh Outcome Budget 2024-25: Performance Against Budget Allocations (Volume VII-1)",
+    "type": "GO",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2024-07-01",
+    "reference_no": "AP-OUTCOME-BUD-VOL-VII-1-2024-25",
+    "subject": "AP Outcome Budget 2024-25 documenting PMEGP implementation by APKVIB with KVIC Mumbai financial assistance: 1226 projects target, Rs 34.75 crore margin money grant, 13486 employment target for the KVIB channel",
+    "keywords": [
+      "PMEGP",
+      "Outcome Budget",
+      "APKVIB",
+      "KVIC Mumbai",
+      "KVIB",
+      "Performance Budget",
+      "1226 Projects",
+      "Margin Money",
+      "Employment",
+      "Andhra Pradesh",
+      "FY 2024-25",
+      "Tripartite"
+    ],
+    "source_url": "https://apfinance.gov.in/...Bud@et24-25/documents/Volume-VII-1.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "andhra-pradesh/government-orders/AP-GOV-2024-0002.pdf",
+    "provenance": {
+      "downloaded_from": "https://apfinance.gov.in/...Bud@et24-25/documents/Volume-VII-1.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "c2f4aadf7f2859430366af63460841fa56d03c992964738056652153bafd216a",
+      "original_filename": "Volume-VII-1.pdf",
+      "archive_url": null
+    },
+    "relationships": [
+      {
+        "target_id": "AP-GOV-2024-0001",
+        "type": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AP-GOV-2025-0003",
+    "title": "Andhra Pradesh Outcome Budget 2025-26: Performance Against Budget Allocations (Volume VII-1)",
+    "type": "GO",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2025-07-01",
+    "reference_no": "AP-OUTCOME-BUD-VOL-VII-1-2025-26",
+    "subject": "AP Outcome Budget 2025-26 documenting performance against budget allocations, including Khadi & Village Industries and MSME development programmes that channel PMEGP state matching subsidy",
+    "keywords": [
+      "PMEGP",
+      "Outcome Budget",
+      "APKVIB",
+      "KVIB",
+      "MSME",
+      "Performance Budget",
+      "Khadi",
+      "Village Industries",
+      "Andhra Pradesh",
+      "FY 2025-26"
+    ],
+    "source_url": "https://apfinance.gov.in/...Bud@et25-26/documents/Volume-VII-1.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/government-orders/AP-GOV-2025-0003.pdf",
+    "provenance": {
+      "downloaded_from": "https://apfinance.gov.in/...Bud@et25-26/documents/Volume-VII-1.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "38bed77bb2f39e0f71513439570a961bf24d9d2e0186f3d8cf68447560eb251a",
+      "original_filename": "Volume-VII-1.pdf",
+      "archive_url": null
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2026-0003",
+    "title": "Andhra Pradesh Outcome Budget 2026-27: Performance Against Budget Allocations (Volume VII-1)",
+    "type": "GO",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2026-07-01",
+    "reference_no": "AP-OUTCOME-BUD-VOL-VII-1-2026-27",
+    "subject": "AP Outcome Budget 2026-27 documenting performance against budget allocations, including Khadi & Village Industries and MSME development programmes that channel PMEGP state matching subsidy",
+    "keywords": [
+      "PMEGP",
+      "Outcome Budget",
+      "APKVIB",
+      "KVIB",
+      "MSME",
+      "Performance Budget",
+      "Khadi",
+      "Village Industries",
+      "Andhra Pradesh",
+      "FY 2026-27"
+    ],
+    "source_url": "https://apfinance.gov.in/...Bud@et26-27/documents/Volume-VII-1.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "andhra-pradesh/government-orders/AP-GOV-2026-0003.pdf",
+    "provenance": {
+      "downloaded_from": "https://apfinance.gov.in/...Bud@et26-27/documents/Volume-VII-1.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "97ff44f066a6090389d05dfde25eae7dfea9819c7d87301e834284c439246895",
+      "original_filename": "Volume-VII-1.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]

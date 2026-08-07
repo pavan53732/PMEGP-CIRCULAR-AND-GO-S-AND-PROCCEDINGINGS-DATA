@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2024-0002",
+  "source_url": "https://apfinance.gov.in/...Bud@et24-25/documents/Volume-VII-1.pdf",
+  "download_timestamp": "2026-08-07T23:30:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "c2f4aadf7f2859430366af63460841fa56d03c992964738056652153bafd216a",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in (HTTP 200, application/pdf). 324 pages. The 2024-25 Outcome Budget explicitly documents PMEGP implementation: 'With the financial assistance of KVIC Mumbai, APKVIB implements PMEGP during 2024-25 to achieve 1226 projects with a margin money grant of Rs 34.75 cr and to achieve an employment of 13486.' This is the first acquired document that explicitly names the tripartite KVIC (funding) / APKVIB (implementation) / DIC (execution) model. 2 PMEGP mentions, 22 Industries mentions."
+}
