@@ -3,6 +3,7 @@ import os
 import json
 import csv
 import shutil
+import hashlib
 from datetime import datetime
 
 # Path references
@@ -45,6 +46,15 @@ VALID_TYPES = [
     "Letter", "Minutes", "Agenda", "Report", "Guidelines", "Instruction", "Other"
 ]
 
+VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended"]
+
+def calculate_sha256(filepath):
+    sha256_hash = hashlib.sha256()
+    with open(filepath, "rb") as f:
+        for byte_block in iter(lambda: f.read(4096), b""):
+            sha256_hash.update(byte_block)
+    return sha256_hash.hexdigest()
+
 def load_json_db():
     if os.path.exists(json_path):
         with open(json_path, 'r', encoding='utf-8') as f:
@@ -64,20 +74,40 @@ def save_csv_db(db):
     headers = [
         "document_id", "title", "type", "issuing_authority", "department", 
         "state", "district", "date", "reference_no", "subject", "keywords", 
-        "source_url", "status", "file_path"
+        "source_url", "status", "file_path",
+        "prov_downloaded_from", "prov_download_date", "prov_downloaded_by", 
+        "prov_sha256", "prov_original_filename", "prov_archive_url",
+        "relationships_list"
     ]
     with open(csv_path, 'w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=headers)
         writer.writeheader()
         for entry in db:
-            row = entry.copy()
-            # Flatten keywords list to semi-colon separated string for CSV compatibility
-            if isinstance(row["keywords"], list):
+            row = {k: v for k, v in entry.items() if k not in ["provenance", "relationships"]}
+            
+            # Flatten keywords
+            if isinstance(row.get("keywords"), list):
                 row["keywords"] = "; ".join(row["keywords"])
+                
+            # Flatten provenance fields
+            prov = entry.get("provenance", {})
+            row["prov_downloaded_from"] = prov.get("downloaded_from", "")
+            row["prov_download_date"] = prov.get("download_date", "")
+            row["prov_downloaded_by"] = prov.get("downloaded_by", "")
+            row["prov_sha256"] = prov.get("sha256", "")
+            row["prov_original_filename"] = prov.get("original_filename", "")
+            row["prov_archive_url"] = prov.get("archive_url", "")
+            
+            # Flatten relationships
+            rels = entry.get("relationships", [])
+            rels_flat = []
+            for rel in rels:
+                rels_flat.append(f"{rel.get('target_id')}({rel.get('type')})")
+            row["relationships_list"] = "; ".join(rels_flat)
+            
             writer.writerow(row)
 
 def get_next_sequence(db, territory, agency, year):
-    # ID pattern: AP_ANA-DIC-2024-0001
     prefix = f"{territory}-{agency}-{year}-"
     highest_seq = 0
     for entry in db:
@@ -93,9 +123,6 @@ def get_next_sequence(db, territory, agency, year):
     return highest_seq + 1
 
 def determine_target_dir(state, type_name, district=None):
-    """
-    Returns relative directory path in repo and territory/agency parts for Document ID
-    """
     state_clean = state.strip().lower()
     type_clean = type_name.strip()
     
@@ -108,11 +135,10 @@ def determine_target_dir(state, type_name, district=None):
         
         territory = f"AP_{DISTRICT_CODES.get(dist_slug, 'DST')}"
         
-        # Mapping type to folder
-        if type_clean == "Proceeding" or type_clean == "Circular":
+        if type_clean in ["Proceeding", "Circular", "Instruction"]:
             sub = "dic"
             agency = "DIC"
-        elif type_clean == "Minutes" or type_clean == "Agenda":
+        elif type_clean in ["Minutes", "Agenda"]:
             sub = "dlcc"
             agency = "DLCC"
         elif type_clean == "Report":
@@ -147,7 +173,12 @@ def determine_target_dir(state, type_name, district=None):
         return "central-government/kvic/circulars", territory, agency
     else:
         agency = "MSME"
-        return "central-government/msme/circulars", territory, agency
+        if type_clean == "Guidelines":
+            return "central-government/msme/guidelines", territory, agency
+        elif type_clean == "Notification":
+            return "central-government/msme/notifications", territory, agency
+        else:
+            return "central-government/msme/circulars", territory, agency
 
 def main():
     print("=" * 60)
@@ -156,18 +187,38 @@ def main():
     
     db = load_json_db()
     
+    # Check PDF local file first
+    source_file_path = input("Local Path to Document PDF: ").strip()
+    while not os.path.exists(source_file_path):
+        source_file_path = input("File not found! Please provide correct local path: ").strip()
+        
+    # Calculate SHA-256 and detect duplicates
+    file_sha256 = calculate_sha256(source_file_path)
+    print(f"[+] Cryptographic SHA-256 check: {file_sha256}")
+    
+    for entry in db:
+        existing_sha = entry.get("provenance", {}).get("sha256", "")
+        if existing_sha == file_sha256:
+            print(f"\n[-] ERROR: DUPLICATE DOCUMENT DETECTED!")
+            print(f"This PDF has the identical SHA-256 hash as an existing document.")
+            print(f"Duplicate Document ID: {entry.get('document_id')}")
+            print(f"Existing Title       : {entry.get('title')}")
+            print(f"Existing Path        : {entry.get('file_path')}")
+            print("Aborting registration to prevent duplicates.")
+            return
+            
     # 1. Ask for metadata details
-    title = input("Document Title: ").strip()
+    title = input("\nDocument Title: ").strip()
     while not title:
         title = input("Title cannot be empty. Document Title: ").strip()
         
     print(f"\nValid Document Types: {', '.join(VALID_TYPES)}")
-    doc_type = input("Document Type (e.g., GO, Circular, Proceeding, Guidelines): ").strip()
+    doc_type = input("Document Type: ").strip()
     while doc_type not in VALID_TYPES:
         doc_type = input(f"Invalid type. Select from {VALID_TYPES}: ").strip()
         
-    issuing_auth = input("\nIssuing Authority (e.g., Commissioner of Industries): ").strip()
-    dept = input("Department (e.g., Industries & Commerce): ").strip()
+    issuing_auth = input("\nIssuing Authority (e.g., Ministry of MSME): ").strip()
+    dept = input("Department (e.g., MSME): ").strip()
     
     state_input = input("\nState / Level ('Central' or 'Andhra Pradesh'): ").strip()
     while not state_input:
@@ -193,23 +244,43 @@ def main():
         print("Invalid date format. Using current date year for ID, but please correct date in metadata.")
         year = datetime.now().year
         
-    ref_no = input("\nReference/Official Number (e.g., Rc.No.123/PMEGP/2024): ").strip()
+    ref_no = input("\nReference/Official Number (e.g., No. 01/2023-PMEGP): ").strip()
     subject = input("Concise Subject Summary: ").strip()
     
     keywords_raw = input("\nKeywords (comma-separated): ").strip()
     keywords = [kw.strip() for kw in keywords_raw.split(",") if kw.strip()]
     
-    source_url = input("\nSource URL (optional, press enter to skip): ").strip()
+    source_url = input("\nSource URL (where did you find it?): ").strip()
     if not source_url:
         source_url = None
         
-    status = input("Document Status ('Active', 'Superseded', 'Obsolete'): ").strip()
-    if not status:
+    print(f"\nValid Statuses: {', '.join(VALID_STATUSES)}")
+    status = input("Document Status (default 'Active'): ").strip()
+    if not status or status not in VALID_STATUSES:
         status = "Active"
         
-    source_file_path = input("\nLocal Path to Document PDF: ").strip()
-    while not os.path.exists(source_file_path):
-        source_file_path = input("File not found! Please provide correct local path: ").strip()
+    collector = input("\nDownloaded By (your github username, default 'pavan53732'): ").strip()
+    if not collector:
+        collector = "pavan53732"
+        
+    archive_url = input("Permanent Web Archive URL (optional, press enter to skip): ").strip()
+    if not archive_url:
+        archive_url = None
+
+    # Relationship management
+    relationships = []
+    add_rel = input("\nDoes this document reference, supersede, or amend another document in the repository? (y/n): ").strip().lower()
+    if add_rel == 'y':
+        target_id = input("Enter Target Document ID: ").strip()
+        print("Select Relationship Type:")
+        print("1. supersedes\n2. superseded_by\n3. amends\n4. amended_by\n5. references")
+        rel_choice = input("Choice (1-5): ").strip()
+        rel_map = {"1": "supersedes", "2": "superseded_by", "3": "amends", "4": "amended_by", "5": "references"}
+        rel_type = rel_map.get(rel_choice, "references")
+        relationships.append({
+            "target_id": target_id,
+            "type": rel_type
+        })
         
     # 2. Automatically determine category directory and construct Document ID
     target_dir, territory, agency = determine_target_dir(state_input, doc_type, district)
@@ -236,7 +307,16 @@ def main():
         "keywords": keywords,
         "source_url": source_url,
         "status": status,
-        "file_path": final_file_path
+        "file_path": final_file_path,
+        "provenance": {
+            "downloaded_from": source_url,
+            "download_date": datetime.today().strftime("%Y-%m-%d"),
+            "downloaded_by": collector,
+            "sha256": file_sha256,
+            "original_filename": os.path.basename(source_file_path),
+            "archive_url": archive_url
+        },
+        "relationships": relationships
     }
     
     # 4. Copy and Rename file

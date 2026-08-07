@@ -66,13 +66,13 @@ The status table below is automatically compiled and updated from the master dat
 |---|---|---|---|
 | **Central Govt (MSME)** | `central-government/msme/` | 1 | 🟢 Active |
 | **Central Govt (KVIC)** | `central-government/kvic/` | 0 | ⏳ Pending |
-| **AP State Govt Orders** | `andhra-pradesh/government-orders/` | 1 | 🟢 Active |
+| **AP State Govt Orders** | `andhra-pradesh/government-orders/` | 0 | ⏳ Pending |
 | **AP Commissioner of Industries** | `andhra-pradesh/commissioner-of-industries/` | 0 | ⏳ Pending |
 | **AP KVIC State Office** | `andhra-pradesh/kvic-state-office/` | 0 | ⏳ Pending |
 | **SLBC AP Records** | `slbc/` | 0 | ⏳ Pending |
 | **District Level (26 Districts)** | `districts/` | 0 | ⏳ Pending |
 | **Banks Rules & Guidelines** | `banks/` | 0 | ⏳ Pending |
-| **Total Curated Documents** | **-** | **2** | **🟢 Active Curation** |
+| **Total Curated Documents** | **-** | **1** | **🟢 Active Curation** |
 
 <!-- STATUS_TABLE_END -->
 

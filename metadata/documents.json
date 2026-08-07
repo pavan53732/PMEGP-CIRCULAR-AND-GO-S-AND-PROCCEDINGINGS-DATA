@@ -1,46 +1,33 @@
 [
   {
-    "document_id": "IN-MSME-2023-0001",
-    "title": "Official Guidelines for Prime Minister's Employment Generation Programme (PMEGP)",
+    "document_id": "IN-MSME-2018-0001",
+    "title": "Guidelines on Prime Minister's Employment Generation Programme (PMEGP)",
     "type": "Guidelines",
     "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
     "department": "MSME",
     "state": "Central",
     "district": null,
-    "date": "2023-06-01",
-    "reference_no": "No. 01/2023-PMEGP",
-    "subject": "Comprehensive scheme guidelines detailing subsidy percentages, eligibility criteria, and implementation procedures for PMEGP",
+    "date": "2018-09-14",
+    "reference_no": "Regp6/desk/new sch.pmegp/guide",
+    "subject": "Operational guidelines detailing project subsidies, bank accounts operation, EDP training, and monitoring of PMEGP",
     "keywords": [
       "PMEGP",
       "Guidelines",
       "Subsidy",
-      "Eligibility",
-      "Central Scheme"
+      "EDP Training",
+      "Bank Accounts"
     ],
-    "source_url": "https://msme.gov.in/sites/default/files/PMEGP-Guidelines-2023.pdf",
-    "status": "Active",
-    "file_path": "central-government/msme/guidelines/IN-MSME-2023-0001.pdf"
-  },
-  {
-    "document_id": "AP-GOV-2024-0001",
-    "title": "Andhra Pradesh State Level PMEGP Implementation & Target Allocation for FY 2024-25",
-    "type": "GO",
-    "issuing_authority": "Government of Andhra Pradesh",
-    "department": "Industries & Commerce",
-    "state": "Andhra Pradesh",
-    "district": null,
-    "date": "2024-04-15",
-    "reference_no": "G.O.Ms.No. 45/Ind&Com/2024",
-    "subject": "Allocation of district-wise targets and subsidy budgets across KVIC, KVIB, and DICs in Andhra Pradesh",
-    "keywords": [
-      "Target Allocation",
-      "Andhra Pradesh",
-      "KVIC",
-      "DIC",
-      "Subsidy"
-    ],
-    "source_url": "https://industries.ap.gov.in/downloads/GO_45_PMEGP_Target_2024.pdf",
-    "status": "Active",
-    "file_path": "andhra-pradesh/government-orders/AP-GOV-2024-0001.pdf"
+    "source_url": "https://slbcorissa.com/wp-content/uploads/2018/09/PMEGP-Scheme-Guidelines.pdf",
+    "status": "Superseded",
+    "file_path": "central-government/msme/guidelines/IN-MSME-2018-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://slbcorissa.com/wp-content/uploads/2018/09/PMEGP-Scheme-Guidelines.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "73dc70f88b63ebf4f488f6a31c146d7b248ef4e52e0d54214378820df0f3de04",
+      "original_filename": "PMEGP-Scheme-Guidelines.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]

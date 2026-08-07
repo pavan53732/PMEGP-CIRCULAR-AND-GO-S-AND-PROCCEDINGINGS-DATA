@@ -44,6 +44,8 @@ VALID_TYPES = [
     "Letter", "Minutes", "Agenda", "Report", "Guidelines", "Instruction", "Other"
 ]
 
+VALID_STATUSES = ["Active", "Superseded", "Withdrawn", "Cancelled", "Merged", "Amended"]
+
 def validate():
     print("=" * 60)
     print("   PMEGP ARCHIVE - METADATA INTEGRITY VALIDATOR")
@@ -95,6 +97,7 @@ def validate():
         
     # 5. Detail validation for each entry
     id_pattern = re.compile(r"^[A-Z_]+-[A-Z]+-\d{4}-\d{4}$")
+    sha_hashes = {} # To detect duplicate hashes
     
     for idx, entry in enumerate(json_db):
         doc_id = entry.get("document_id", f"ENTRY_INDEX_{idx}")
@@ -104,7 +107,7 @@ def validate():
             errors.append(f"[{doc_id}] Document ID format is invalid. Expected [TERRITORY]-[AGENCY]-[YEAR]-[SEQUENCE] (e.g. AP-COI-2024-0012)")
             
         # Check required fields
-        required_fields = ["title", "type", "issuing_authority", "department", "state", "date", "reference_no", "subject", "keywords", "status", "file_path"]
+        required_fields = ["title", "type", "issuing_authority", "department", "state", "date", "reference_no", "subject", "keywords", "status", "file_path", "provenance"]
         for field in required_fields:
             val = entry.get(field)
             if val is None or val == "" or (isinstance(val, list) and not val):
@@ -114,6 +117,11 @@ def validate():
         doc_type = entry.get("type")
         if doc_type and doc_type not in VALID_TYPES:
             errors.append(f"[{doc_id}] Invalid type '{doc_type}'. Must be one of {VALID_TYPES}")
+            
+        # Validate Status
+        status = entry.get("status")
+        if status and status not in VALID_STATUSES:
+            errors.append(f"[{doc_id}] Invalid status '{status}'. Must be one of {VALID_STATUSES}")
             
         # Validate State & District mapping
         state = entry.get("state")
@@ -133,6 +141,25 @@ def validate():
                 errors.append(f"[{doc_id}] File does not exist at specified path: '{file_path}'")
             elif not os.path.isfile(abs_file_path):
                 errors.append(f"[{doc_id}] Path is not a file: '{file_path}'")
+                
+        # Validate Provenance Block
+        prov = entry.get("provenance")
+        if isinstance(prov, dict):
+            prov_req = ["download_date", "downloaded_by", "sha256", "original_filename"]
+            for pr_f in prov_req:
+                if not prov.get(pr_f):
+                    errors.append(f"[{doc_id}] Provenance missing subfield: '{pr_f}'")
+            
+            # Duplication Hash Check
+            sha = prov.get("sha256")
+            if sha:
+                if sha in sha_hashes:
+                    errors.append(f"[{doc_id}] Duplicate file hash detected! Shares identical SHA-256 hash with '{sha_hashes[sha]}'.")
+                else:
+                    sha_hashes[sha] = doc_id
+        else:
+            if "provenance" in entry:
+                errors.append(f"[{doc_id}] Provenance block is invalid (expected a JSON object).")
                 
     # 6. Report Summary
     print("\n" + "="*50)
