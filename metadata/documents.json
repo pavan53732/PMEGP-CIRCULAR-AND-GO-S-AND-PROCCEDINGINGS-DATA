@@ -148,5 +148,40 @@
       "archive_url": null
     },
     "relationships": []
+  },
+  {
+    "document_id": "AP-GOV-2026-0001",
+    "title": "Andhra Pradesh Demands for Grants for Further Expenditure (Supplementary Estimates) 2025-26",
+    "type": "GO",
+    "issuing_authority": "Government of Andhra Pradesh",
+    "department": "Finance",
+    "state": "Andhra Pradesh",
+    "district": null,
+    "date": "2026-08-07",
+    "reference_no": "FIN-SUP-2025-26/AP",
+    "subject": "Supplementary budget estimates and additional matching subsidy releases for micro-enterprises and PMEGP",
+    "keywords": [
+      "PMEGP",
+      "Budget",
+      "Supplementary Estimates",
+      "Finance",
+      "Andhra Pradesh"
+    ],
+    "source_url": "https://apfinance.gov.in/images/Suppl2025-26Book.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "andhra-pradesh/government-orders/AP-GOV-2026-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://apfinance.gov.in/images/Suppl2025-26Book.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "31348df6284bd0712de32df36d8d2476e67a633e9ae453669f65d4ed442e4d7c",
+      "original_filename": "Suppl2025-26Book.pdf",
+      "archive_url": null
+    },
+    "relationships": []
   }
 ]
