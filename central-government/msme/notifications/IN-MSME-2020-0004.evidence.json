@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-MSME-2020-0004",
+  "source_url": "https://udyamregistration.gov.in/docs/OM_NIC_01.12.2020.pdf",
+  "download_timestamp": "2026-08-07T23:10:45Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "bc1cee52e8fe2764bc0aa3e100d0dfd623db35480073c60f38a37c7d0b40712c",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of udyamregistration.gov.in. 1 page, digital-native PDF. O.M. on NIC Codes not covered under MSMED Act, 2006 for Udyam Registration. Date inferred from filename (01.12.2020). Directly relevant to PMEGP because the negative list of NIC codes determines which activities are eligible for PMEGP subsidy. Quality_metadata=B because the exact O.M. number is not visible in the first-page text extract."
+}

@@ -75,9 +75,9 @@ The status table below is automatically compiled and updated from the master dat
 <!-- STATUS_TABLE_START -->
 
 ### Archive Collection Completeness
-**Completeness Score: `0.98%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
+**Completeness Score: `1.20%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
 ```text
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 26 / 2665 documents collected
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 32 / 2665 documents collected
 ```
 
 #### Completeness Breakdown by Official Source
@@ -86,7 +86,7 @@ The status table below is automatically compiled and updated from the master dat
 |---|---|---|---|---|---|
 | Central MSME Guidelines | 15 | Pending Audit | 6 | 🟡 In Progress | `[████░░░░░░]` (40.0%) |
 | Central MSME Circulars | 50 | Pending Audit | 2 | 🟡 In Progress | `[░░░░░░░░░░]` (4.0%) |
-| Central MSME Notifications | 40 | Pending Audit | 1 | 🟡 In Progress | `[░░░░░░░░░░]` (2.5%) |
+| Central MSME Notifications | 40 | Pending Audit | 7 | 🟡 In Progress | `[█░░░░░░░░░]` (17.5%) |
 | Central KVIC Circulars | 110 | Pending Audit | 6 | 🟡 In Progress | `[░░░░░░░░░░]` (5.5%) |
 | Central KVIC Advisories | 30 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | Central KVIC EDP Guidelines | 25 | Pending Audit | 2 | 🟡 In Progress | `[░░░░░░░░░░]` (8.0%) |
@@ -108,7 +108,7 @@ The status table below is automatically compiled and updated from the master dat
 | District DLRC Meeting Reports | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | District Lead Bank Guidelines | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | Commercial Banks Circulars | 100 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
-| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **26** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (0.98%) |
+| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **32** | **🟡 Curation Phase** | `[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (1.20%) |
 
 <!-- STATUS_TABLE_END -->
 
