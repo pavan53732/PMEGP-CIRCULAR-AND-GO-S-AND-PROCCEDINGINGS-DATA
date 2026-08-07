@@ -1,0 +1,11 @@
+{
+  "document_id": "IN-MSME-2022-0002",
+  "source_url": "https://msme.gov.in/sites/default/files/FlipbookEnglishSchemeBooklet.pdf",
+  "download_timestamp": "2026-08-07T22:42:00Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "3886d8d33a037ab6378d0563f9343a0951dbb6965d7c0396877126ce2c813887",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified via Wayback Machine snapshot of msme.gov.in. 66 pages, 4.0 MB, 14 PMEGP mentions. This is the official MSME Schemes Booklet for FY 2022-23, with PMEGP as scheme #1 (pages 3-12). Includes PMEGP eligibility, subsidy rates, application procedure, EDP training, and the 2nd loan upgradation scheme. Also covers other MSME schemes (CGTMSE, PMEGP e-portal, etc.). Broader than PMEGP-only but PMEGP is the lead scheme. Date set to 2022-04-01 (start of FY 2022-23) as the booklet is labeled '2022-23'."
+}

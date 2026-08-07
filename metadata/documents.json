@@ -378,5 +378,149 @@
       "archive_url": null
     },
     "relationships": []
+  },
+  {
+    "document_id": "IN-MSME-2022-0001",
+    "title": "Office Memorandum: Approval for Continuation of PMEGP over the 15th Finance Commission Cycle (2021-22 to 2025-26) with Revised Guidelines",
+    "type": "Notification",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2022-05-13",
+    "reference_no": "O.M. No. PMEGP/Policy/09/2021",
+    "subject": "Office Memorandum approving the continuation of PMEGP for five years (2021-22 to 2025-26) under the 15th Finance Commission with an outlay of Rs. 13,554.42 Crores, along with the enclosed revised scheme guidelines",
+    "keywords": [
+      "PMEGP",
+      "Office Memorandum",
+      "15th Finance Commission",
+      "Continuation",
+      "Revised Guidelines",
+      "2021-22",
+      "2025-26",
+      "Outlay",
+      "MSME",
+      "Subsidy",
+      "Margin Money",
+      "KVIC",
+      "Targets"
+    ],
+    "source_url": "https://msme.gov.in/sites/default/files/Revised-Guidelines-PMEGP-2022.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "central-government/msme/guidelines/IN-MSME-2022-0001.pdf",
+    "provenance": {
+      "downloaded_from": "https://msme.gov.in/sites/default/files/Revised-Guidelines-PMEGP-2022.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "32ec9f9623bb2bd637d45a0c4ed629c2c4b70f6b269e8fb89e74c359736ed4b9",
+      "original_filename": "Revised-Guidelines-PMEGP-2022.pdf",
+      "archive_url": "https://web.archive.org/web/20221208135927/https://msme.gov.in/sites/default/files/Revised-Guidelines-PMEGP-2022.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2018-0001",
+        "type": "supersedes"
+      },
+      {
+        "target_id": "IN-MSME-2023-0001",
+        "type": "referenced_by"
+      }
+    ]
+  },
+  {
+    "document_id": "IN-MSME-2018-0002",
+    "title": "Guidelines for Second Financial Assistance under PMEGP for Expansion of Existing Successful PMEGP/MUDRA Units",
+    "type": "Guidelines",
+    "issuing_authority": "Khadi and Village Industries Commission (Ministry of MSME)",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2018-08-01",
+    "reference_no": "PMEGP/2nd-Loan/Guidelines/2018",
+    "subject": "Guidelines for sanctioning a second loan with subsidy for upgrading and expanding existing successful PMEGP/MUDRA units, as approved under the 14th Finance Commission continuation (2017-18 to 2019-20)",
+    "keywords": [
+      "PMEGP",
+      "Second Loan",
+      "2nd Financial Assistance",
+      "Upgradation",
+      "Expansion",
+      "MUDRA",
+      "Subsidy",
+      "Margin Money",
+      "KVIC",
+      "Well-Performing Units",
+      "14th Finance Commission"
+    ],
+    "source_url": "https://msme.gov.in/sites/default/files/final-guidlines-for-2nd-loan.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "B",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "central-government/msme/guidelines/IN-MSME-2018-0002.pdf",
+    "provenance": {
+      "downloaded_from": "https://msme.gov.in/sites/default/files/final-guidlines-for-2nd-loan.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "251c6e774e3cf252b772463b65a698734855f4690d891978147fc4c9cd1ded3d",
+      "original_filename": "final-guidlines-for-2nd-loan.pdf",
+      "archive_url": "https://web.archive.org/web/20221208135927/https://msme.gov.in/sites/default/files/final-guidlines-for-2nd-loan.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2018-0001",
+        "type": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "IN-MSME-2022-0002",
+    "title": "Ministry of MSME Schemes Booklet 2022-23: PMEGP and Other MSME Schemes",
+    "type": "Guidelines",
+    "issuing_authority": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "MSME",
+    "state": "Central",
+    "district": null,
+    "date": "2022-04-01",
+    "reference_no": "MSME-Schemes-Booklet-2022-23",
+    "subject": "Official Ministry of MSME schemes booklet for 2022-23, compiling all MSME schemes with PMEGP as scheme #1 (pages 3-12), including eligibility, subsidy rates, application procedure, and the 2nd loan upgradation scheme",
+    "keywords": [
+      "PMEGP",
+      "Schemes Booklet",
+      "MSME",
+      "2022-23",
+      "Self Reliant India",
+      "Subsidy",
+      "KVIC",
+      "KVIB",
+      "DIC",
+      "Udyam",
+      "Udyog Aadhar"
+    ],
+    "source_url": "https://msme.gov.in/sites/default/files/FlipbookEnglishSchemeBooklet.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "B",
+    "file_path": "central-government/msme/guidelines/IN-MSME-2022-0002.pdf",
+    "provenance": {
+      "downloaded_from": "https://msme.gov.in/sites/default/files/FlipbookEnglishSchemeBooklet.pdf",
+      "download_date": "2026-08-07",
+      "downloaded_by": "pavan53732",
+      "sha256": "3886d8d33a037ab6378d0563f9343a0951dbb6965d7c0396877126ce2c813887",
+      "original_filename": "FlipbookEnglishSchemeBooklet.pdf",
+      "archive_url": "https://web.archive.org/web/20221208135927/https://msme.gov.in/sites/default/files/FlipbookEnglishSchemeBooklet.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2022-0001",
+        "type": "references"
+      }
+    ]
   }
 ]
