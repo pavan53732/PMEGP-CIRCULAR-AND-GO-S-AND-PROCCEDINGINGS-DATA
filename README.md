@@ -180,7 +180,8 @@ python3 scripts/validate/update_readme.py
 | [docs/document_classification.md](docs/document_classification.md) | Directory structure mapping, Document ID scheme, and the 26 AP district slugs/codes. |
 | [docs/metadata_schema.md](docs/metadata_schema.md) | Production-frozen metadata spec: status taxonomy, provenance, relationships, quality scores. |
 | [docs/SOURCE_REGISTRY.md](docs/SOURCE_REGISTRY.md) | Registry of every official source portal (Central, AP State, 26 district portals). |
-| [docs/MISSING_DOCUMENTS.md](docs/MISSING_DOCUMENTS.md) | Gap registry of known missing documents and target collection dates. |
+| [docs/MISSING_DOCUMENTS.md](docs/MISSING_DOCUMENTS.md) | Gap registry of known missing documents, organised by the tripartite KVIC/KVIB/DIC targeting model. |
+| [docs/DISTRICT_PMEGP_PROGRESS_FY2024_25.md](docs/DISTRICT_PMEGP_PROGRESS_FY2024_25.md) | District-wise PMEGP progress table for FY 2024-25 (all 26 AP districts) — the definitive baseline for district-level acquisition targeting. |
 | [docs/ACQUISITION_DECISIONS.md](docs/ACQUISITION_DECISIONS.md) | Architecture & Curation Decision Records (AD-0001 onwards). |
 | [schemas/document_metadata_schema.json](schemas/document_metadata_schema.json) | Machine-readable JSON Schema (v2.0.0) — enforced by the validator. |
 | [schemas/document_metadata_example.json](schemas/document_metadata_example.json) | Real-world example entry pulled from the archive. |

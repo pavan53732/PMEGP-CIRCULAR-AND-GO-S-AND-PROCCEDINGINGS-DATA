@@ -2,47 +2,207 @@
 
 This document acts as an active, collaborative checklist of known official documents, timeframes, or regional proceedings that are currently missing from this archive. Contributors are encouraged to target these gaps.
 
+It is organised by the **tripartite administrative reality** of PMEGP implementation: every target, every fund release, and every review involves the three implementing channels — **KVIC, KVIB, and DIC** — operating in parallel. The historical allocation ratio is approximately **KVIC 30% : KVIB 30% : DIC 40%** (or 60:40 between KVIC/KVIB combined and DICs in some fiscal years). When looking for any FY 2026-27 target order, we must find the version that shows all three channels side-by-side.
+
+See also [`docs/DISTRICT_PMEGP_PROGRESS_FY2024_25.md`](DISTRICT_PMEGP_PROGRESS_FY2024_25.md) for the district-wise PMEGP progress baseline that informs the prioritisation below.
+
 ---
 
 ## 1. National Level & Central Gaps
 
 ### A. Ministry of MSME Policy Gaps
-- [ ] **2023 Guidelines Revisions:** The December 2023 revised guidelines are referenced but we need to track down the official PDF and its companion O.Ms.
-- [ ] **15th Finance Commission Cycle Continuation Memo (2021-22):** The official notification continuing PMEGP for five years (2021-22 to 2025-26) issued around mid-2022.
+
+- [x] ~~**15th Finance Commission Cycle Continuation Memo (2021-22):~~ **ACQUIRED** as `IN-MSME-2022-0001` (O.M. No. PMEGP/Policy/09/2021 dated 13.05.2022, Rs. 13,554.42 Crore outlay for 2021-22 to 2025-26).
+- [x] ~~**Udyam Portal Registration O.M.s:~~ **ACQUIRED** as `IN-MSME-2020-0001` (17.07.2020), `IN-MSME-2020-0002` through `IN-MSME-2020-0005`, and `IN-MSME-2021-0001`.
+- [x] ~~**Original 2008 PMEGP Guidelines:~~ **ACQUIRED** as `IN-MSME-2008-0001` (KVI Policy and Establishment Section).
+- [x] ~~**2014 & 2015 Operational Guideline Modifications:~~ **ACQUIRED** as `IN-MSME-2014-0001` (20.09.2014) and `IN-MSME-2015-0001` (06.05.2015), both OCR-processed.
+- [ ] **2023 Guidelines Revisions:** The December 2023 revised guidelines (`IN-MSME-2023-0001` in archive) are referenced in the May 2022 O.M. but we should track down any companion O.M.s issued in late 2023 that may have modified the operational guidelines further.
+- [ ] **PMEGP 16th Finance Commission Continuation O.M. (2026-27 onwards):** The 15th Finance Commission cycle ends on 31 March 2026. The continuation O.M. for the 16th Finance Commission cycle (2026-27 to 2030-31) is expected to be issued by MoMSME in Q1-Q2 2026. **This is the highest-priority Central gap.**
 
 ### B. KVIC National Circulars
-- [ ] **EDP Online Training Transition Circulars (2020-21):** Circulars detailing transition from offline to online EDP training during COVID-19.
-- [ ] **Target Allocation Circulars (2024-25, 2025-26):** National targets for all states.
+
+- [x] ~~**EDP Online Training Transition Circulars (2019-20):~~ **ACQUIRED** as `IN-KVIC-2019-0001` (15.11.2019 EDP Circular) and `IN-KVIC-2019-0002` (23.10.2019 Online EDP).
+- [x] ~~**Certified PMEGP Guidelines 2022-23:~~ **ACQUIRED** as `IN-KVIC-2022-0001`.
+- [x] ~~**Physical Verification through Geo-tagging:~~ **ACQUIRED** as `IN-KVIC-2022-0002`.
+- [x] ~~**Udyog Aadhaar Memorandum Adoption (Nov 2015):~~ **ACQUIRED** as `IN-KVIC-2015-0001`.
+- [ ] **National Target Allocation Circulars (FY 2024-25, 2025-26, 2026-27):** KVIC issues annual circulars distributing the national PMEGP targets state-wise. These are the **tripartite allocation matrices** showing each state's KVIC, KVIB, and DIC shares. Not yet acquired for any year. **Highest priority for Tier 1 completion.**
+  - Expected source: KVIC Directorate of PMEGP, Mumbai (RTI required).
+  - Expected format: Table with columns for State, KVIC target, KVIB target, DIC target, Total target, Margin Money allocation.
+- [ ] **Remaining ~200 PMEGP e-portal notifications:** The `kviconline.gov.in/pmegpeportal/dashboard/circular.jsp` page lists 211 notification PDFs. We acquired the 8 highest-priority ones in batch 5. The remaining ~200 cover EDP exemptions, 2nd loan addendums, ID card circulars, online system policy issues, etc. Should be acquired in batches of 20-30.
+
+### C. RBI / Banking Channel Gaps
+
+- [x] ~~**RBI MSME Classification Circulars (2020):~~ **ACQUIRED** as `IN-MSME-2020-0002` (RBI/2020-2021/10) and `IN-MSME-2020-0003` (RBI/2020-2021/26).
+- [ ] **RBI Master Circular on Credit Flow to MSME Sector (latest):** RBI issues an annual Master Circular consolidating all PMEGP and MSME-related banking instructions. The latest version should be acquired from rbi.org.in.
+- [ ] **RBI RPCD circulars on PMEGP margin money adjustment:** Specific RBI instructions to banks on the margin money claim and adjustment procedure under PMEGP.
 
 ---
 
 ## 2. Andhra Pradesh State Level Gaps
 
 ### A. Government Orders (GOs)
-- [ ] **2025 AP Budget Release Orders (BROs):** Government Orders releasing state matching subsidy funds for PMEGP implementation.
-- [ ] **2014-2020 Historical GOs:** Reorganization-era state orders modifying margin money routing for newly formed divisions.
 
-### B. Commissioner of Industries Proceedings
-- [ ] **Target Allocation Proceedings (2023-24, 2024-25):** The detailed district-wise, category-wise target distribution tables.
-- [ ] **Weekly/Monthly Review Meetings Minutes:** Official CoI meeting reviews with General Managers of all 26 DICs.
+- [x] ~~**AP Budget Volume III-16 (Industries & Commerce Dept):~~ **ACQUIRED** for FY 2022-23 through FY 2026-27 (5-year continuous series, `AP-GOV-2022-0001` through `AP-GOV-2026-0002`).
+- [x] ~~**AP Supplementary Demands for Grants 2025-26:~~ **ACQUIRED** as `AP-GOV-2026-0001`.
+- [x] ~~**AP Socio Economic Survey 2024-25:~~ **ACQUIRED** as `AP-GOV-2025-0001` (contains the district-wise PMEGP progress table at Annexure 6.4).
+- [ ] **AP Budget Release Orders (BROs) for PMEGP state matching subsidy:** Specific G.O.Ms releasing the state share of PMEGP margin money to KVIC, KVIB, and DICs. Expected to be issued quarterly by the Finance Department.
+- [ ] **2014-2020 Historical GOs:** Reorganization-era state orders modifying margin money routing for newly formed divisions (post-bifurcation of AP and Telangana in 2014).
+- [ ] **AP G.O.Ms on Industries & Commerce Dept (Programme-1) PMEGP target allocations:** The formal G.O.Ms that allocate the tripartite KVIC/KVIB/DIC targets for each fiscal year. These are the **state-level allocation documents** that should display all three channels side-by-side.
+
+### B. Commissioner of Industries (CoI) Proceedings
+
+- [ ] **Target Allocation Proceedings (FY 2024-25, 2025-26, 2026-27):** The detailed state-level tables dividing the annual PMEGP targets (physical and financial) across KVIC Vijayawada, AP KVIB, and all 26 District Industries Centres (DICs). **This is the tripartite allocation at the state level.** The CoI issues these proceedings after receiving the national target allocation from KVIC.
+  - Expected content: Table with rows for each of the 26 districts and columns for KVIC target, KVIB target, DIC target, Total target, Margin Money allocation.
+  - Expected source: Commissioner of Industries, AP (industries.ap.gov.in or RTI).
+- [ ] **Quarterly Monitoring Instructions to DIC General Managers:** CoI proceedings directing DIC GMs to conduct physical verifications of established PMEGP units within 24 months (now geo-tagged per `IN-KVIC-2022-0002`).
+- [ ] **Weekly/Monthly Review Meeting Minutes:** Official CoI meeting reviews with General Managers of all 26 DICs. These should reference the tripartite progress per district.
+- [ ] **State Level Task Force Committee minutes:** Chaired by Principal Secretary (Industries) / Commissioner (Industries), approving private sector scheduled commercial banks for PMEGP lending.
+
+### C. AP KVIB (Andhra Pradesh Khadi and Village Industries Board)
+
+- [ ] **AP KVIB Annual Target Allocation Proceedings:** The AP KVIB's internal proceedings allocating its 30% share of PMEGP targets to district-level KVIB offices.
+- [ ] **AP KVIB Review Meeting Minutes:** Quarterly review meetings chaired by the AP KVIB CEO.
+- [ ] **AP KVIB EDP Training Notices:** Training schedules issued to RSETIs for PMEGP-selected candidates routed through the KVIB channel.
+  - Note: AP KVIB portal (`apkvib.org.in`) is largely offline; Wayback Machine has only a 2016 snapshot with a `circular.php` page that did not contain PMEGP-specific circulars. RTI or physical collection required.
+
+### D. KVIC AP State Office (Vijayawada/Visakhapatnam)
+
+- [ ] **KVIC State Office Review Letters to Banks:** Review letters issued by the KVIC State Director (Vijayawada/Visakhapatnam) to financing banks regarding delayed margin money releases. Particularly relevant for Anakapalli, which has a 65% claim-to-disbursement gap (see [`DISTRICT_PMEGP_PROGRESS_FY2024_25.md`](DISTRICT_PMEGP_PROGRESS_FY2024_25.md) section 7).
+- [ ] **KVIC AP State Office Annual Action Plan:** The state-level action plan documenting KVIC's 30% share of PMEGP targets and the implementation strategy.
+- [ ] **KVIC AP State Office EDP Training Calendar:** The annual EDP training calendar for PMEGP candidates routed through the KVIC channel.
+  - Note: KVIC AP State Office documents are largely offline. RTI filings to the KVIC State Director's office are the primary acquisition route (see [`docs/collection_guide.md`](collection_guide.md) Method 2).
 
 ---
 
-## 3. SLBC & District Level Gap Audit
+## 3. SLBC AP (State Level Bankers' Committee) Gaps
 
-Because PMEGP is implemented via local banking systems, district-level records are crucial. Currently, all districts are **100% Pending**:
+The SLBC AP portal (`slbcap.nic.in`) is **DNS-unresolvable** from the acquisition server and the Wayback Machine snapshot is only a splash page. All SLBC AP documents will require RTI or physical collection.
 
-| District | Folder Path | DIC Files | DLCC Minutes | Lead Bank Logs | Target Collection Date |
-|---|---|---|---|---|---|
-| **Anakapalli** | `districts/anakapalli/` | ❌ Missing | ❌ Missing | ❌ Missing | Q3 2026 |
-| **Visakhapatnam** | `districts/visakhapatnam/` | ❌ Missing | ❌ Missing | ❌ Missing | Q3 2026 |
-| **Kurnool** | `districts/kurnool/` | ❌ Missing | ❌ Missing | ❌ Missing | Q3 2026 |
-| **All Other Districts** | `districts/...` | ❌ Missing | ❌ Missing | ❌ Missing | Ongoing |
+- [ ] **SLBC AP Quarterly Agenda Books:** Detailed bank-wise target-vs-achievement sheets, presented quarterly to the SLBC. Each agenda book should contain PMEGP-specific sections showing the tripartite progress.
+- [ ] **SLBC AP Quarterly Minutes:** The official minutes of the quarterly SLBC meetings, including decisions on PMEGP margin money release backlogs.
+- [ ] **SLBC AP District Performance Reviews:** Specific pages detailing banking performance under PMEGP for each of the 26 districts, with emphasis on Visakhapatnam and Anakapalli.
+- [ ] **SLBC AP Annual Credit Plan (with PMEGP sub-targets):** The annual credit plan issued by the SLBC, including bank-wise PMEGP sub-targets.
+
+**Acquisition route:** File RTI with the SLBC AP Convenor Bank (typically the Lead Bank of the state, which rotates). See [`docs/collection_guide.md`](collection_guide.md) Method 2 for the RTI template.
 
 ---
 
-## 4. How to Register a Missing Document
-If you identify a referenced document (e.g., a GO mentioned inside another proceeding) that is not in the archive:
-1.  Open a **GitHub Issue** detailing the document's reference number, date, and issuing authority.
-2.  Add it to this `MISSING_DOCUMENTS.md` file under the appropriate section in a Pull Request.
-3.  Once the document is successfully collected and verified, check it off the list and move it to the Active status table in the main `README.md`.
+## 4. District-Level Gap Audit (Tripartite per District)
+
+For each priority district, we need to acquire the following document types from the three implementing channels (KVIC, KVIB, DIC) plus the Lead Bank and Collector. The historical allocation ratio is KVIC 30% : KVIB 30% : DIC 40%, so each district's target is split three ways.
+
+### Tier A — Highest-Activity Districts (>150 projects sanctioned in FY 2024-25)
+
+These districts have the most active PMEGP pipelines and should produce the highest volume of district-level proceedings:
+
+| District | Target (Prj) | Sanctioned (Prj) | MM Disbursed (₹ Lakh) | Lead Bank | DIC GM | KVIB Officer | KVIC Rep | Target Date |
+|---|---|---|---|---|---|---|---|---|
+| **Prakasam** | 87 | 254 | 552.98 | TBD | TBD | TBD | TBD | Q4 2026 |
+| **Annamayya** | 69 | 271 | 299.17 | TBD | TBD | TBD | TBD | Q4 2026 |
+| **Tirupati** | 78 | 239 | 344.28 | TBD | TBD | TBD | TBD | Q4 2026 |
+| **East Godavari** | 44 | 185 | 588.91 | TBD | TBD | TBD | TBD | Q4 2026 |
+| **Anantapur** | 71 | 170 | 316.10 | TBD | TBD | TBD | TBD | Q4 2026 |
+
+### Tier B — User-Specified Focus Districts
+
+**Visakhapatnam and Anakapalli are the primary focus** per the acquisition roadmap. Both were part of the undivided Visakhapatnam district until 2022, when Anakapalli was carved out as a separate district.
+
+| District | Target (Prj) | Sanctioned (Prj) | MM Disbursed (₹ Lakh) | Lead Bank | DIC GM | KVIB Officer | KVIC Rep | Target Date |
+|---|---|---|---|---|---|---|---|---|
+| **Visakhapatnam** | 26 | 27 | 80.70 | **State Bank of India (SBI)** | TBD | TBD | TBD | Q3 2026 |
+| **Anakapalli** | 55 | 159 | 100.96 | **Union Bank of India** | TBD | TBD | TBD | Q3 2026 |
+
+#### Per-District Document Checklist (Visakhapatnam & Anakapalli)
+
+For each of the two focus districts, acquire the following:
+
+**A. DIC Proceedings (District Industries Centre — DIC channel, 40% share)**
+- [ ] **Visakhapatnam DIC** — Annual target allocation proceeding (showing the KVIC/KVIB/DIC split for the district).
+- [ ] **Visakhapatnam DIC** — Quarterly monitoring instructions received from CoI.
+- [ ] **Visakhapatnam DIC** — Physical verification reports (geo-tagged per `IN-KVIC-2022-0002`).
+- [ ] **Visakhapatnam DIC** — Sponsoring letters forwarding vetted applications to SBI.
+- [ ] **Anakapalli DIC** — Annual target allocation proceeding (newly formed DIC, 2022).
+- [ ] **Anakapalli DIC** — Task Force proceedings for the new district setup.
+- [ ] **Anakapalli DIC** — Sponsoring letters forwarding vetted applications to Union Bank.
+
+**B. DLCC Minutes (District Level Consultative Committee — joint KVIC/KVIB/DIC + Lead Bank)**
+- [ ] **Visakhapatnam DLCC** — Quarterly meeting minutes with bank-wise target vs. achievement.
+- [ ] **Visakhapatnam DLCC** — Joint presentation by DIC GM, KVIB District Officer, KVIC rep, and SBI Lead Bank Manager.
+- [ ] **Anakapalli DLCC** — Quarterly meeting minutes (first meetings post-district formation).
+- [ ] **Anakapalli DLCC** — Joint presentation including Union Bank Lead Bank Manager.
+
+**C. DLRC Reports (District Level Review Committee — credit performance review)**
+- [ ] **Visakhapatnam DLRC** — Half-yearly credit performance reviews.
+- [ ] **Visakhapatnam DLRC** — Bank-wise PMEGP margin money claim and disbursement tracking.
+- [ ] **Visakhapatnam DLRC** — NPA/recovery analysis for PMEGP-assisted units.
+- [ ] **Anakapalli DLRC** — Half-yearly credit performance reviews (baseline for new district).
+- [ ] **Anakapalli DLRC** — Investigation of the 65% claim-to-disbursement gap (₹289.81 L claimed, ₹100.96 L disbursed).
+
+**D. Lead Bank Directives**
+- [ ] **SBI Visakhapatnam (Lead Bank)** — Annual Lead Bank Credit Plan with PMEGP sub-targets.
+- [ ] **SBI Visakhapatnam** — Handholding and RSETI setup guidelines.
+- [ ] **SBI Visakhapatnam** — Bank-wise target allocation circulars to Visakhapatnam branches.
+- [ ] **Union Bank Anakapalli (Lead Bank)** — Annual Lead Bank Credit Plan with PMEGP sub-targets.
+- [ ] **Union Bank Anakapalli** — Handholding and RSETI setup guidelines for the new district.
+- [ ] **Union Bank Anakapalli** — Bank-wise target allocation circulars to Anakapalli branches.
+
+**E. Collector Proceedings (District Level Monitoring Committee — DLMC)**
+- [ ] **Visakhapatnam Collector** — DLMC review logs chaired by the District Collector.
+- [ ] **Visakhapatnam Collector** — Quarterly PMEGP review meeting minutes.
+- [ ] **Anakapalli Collector** — DLMC review logs (first meetings post-district formation).
+- [ ] **Anakapalli Collector** — Quarterly PMEGP review meeting minutes.
+
+### Tier C — All Other Districts
+
+The remaining 19 districts are at 0% collection and will be targeted in fiscal-year-aligned batches after Tier A and Tier B are complete. See [`docs/DISTRICT_PMEGP_PROGRESS_FY2024_25.md`](DISTRICT_PMEGP_PROGRESS_FY2024_25.md) for the full 26-district progress table to prioritise by activity level.
+
+---
+
+## 5. Banks & Commercial Lending Channel Gaps
+
+- [ ] **SBI PMEGP circulars:** State Bank of India's internal circulars to its branches regarding PMEGP loan processing and margin money claims. SBI is the Lead Bank for Visakhapatnam.
+- [ ] **Union Bank PMEGP circulars:** Union Bank of India's internal circulars. Union Bank is the Lead Bank for Anakapalli.
+- [ ] **AP Grameena Vikas Bank PMEGP circulars:** The Regional Rural Bank for Andhra Pradesh, a major PMEGP lender in rural areas.
+- [ ] **Other commercial bank PMEGP circulars:** Andhra Bank, Indian Bank, Canara Bank, etc.
+
+---
+
+## 6. How to Register a Missing Document
+
+If you identify a referenced document (e.g., a G.O. mentioned inside another proceeding) that is not in the archive:
+
+1.  **Open a GitHub Issue** using the `Document Request` template (`.github/ISSUE_TEMPLATE/document_request.md`) detailing the document's reference number, date, issuing authority, and why it matters.
+2.  **Add it to this `MISSING_DOCUMENTS.md` file** under the appropriate section in a Pull Request. Use the `- [ ]` checkbox syntax so it can be tracked.
+3.  **Once the document is successfully collected and verified**, check it off the list (`- [x] ~~...~~ **ACQUIRED** as <document_id>`), register it via `python3 scripts/metadata/generate_metadata.py`, and the README status table will auto-update.
+
+---
+
+## 7. RTI Filing Priority Queue
+
+Given that many of the documents above are offline-only (per the AD-0002 mirror policy and the geoblocking reality of `slbcap.nic.in`, `industries.ap.gov.in`, and `apkvib.org.in`), the following RTI filings should be prioritised:
+
+### Priority 1 — State-Level Tripartite Allocation (Q3 2026)
+File RTI with the **Commissioner of Industries, AP** requesting:
+- Annual target allocation proceedings for FY 2024-25, 2025-26, and 2026-27 showing the KVIC/KVIB/DIC split.
+- Quarterly monitoring instructions to DIC General Managers.
+- State Level Task Force Committee minutes approving banks for PMEGP lending.
+
+### Priority 2 — SLBC AP Quarterly Records (Q3 2026)
+File RTI with the **SLBC AP Convenor Bank** requesting:
+- Quarterly agenda books and minutes for the last 8 quarters (FY 2024-25 and FY 2025-26).
+- District performance review pages for Visakhapatnam and Anakapalli.
+
+### Priority 3 — KVIC AP State Office Letters (Q4 2026)
+File RTI with the **KVIC State Director, AP** (Vijayawada/Visakhapatnam) requesting:
+- Review letters to banks regarding delayed margin money releases (especially for Anakapalli).
+- Annual action plan and EDP training calendar.
+- State-level target allocation correspondence with KVIC HQ.
+
+### Priority 4 — Visakhapatnam & Anakapalli DIC Records (Q4 2026)
+File RTI with the **District Collector's PIO** (Visakhapatnam and Anakapalli) requesting:
+- DIC annual target allocation proceedings.
+- DLCC and DLRC meeting minutes for the last 4 quarters.
+- Lead Bank directives and annual credit plans.
+- Collector DLMC review logs.
+
+See [`docs/collection_guide.md`](collection_guide.md) Method 2 for the RTI query template.
