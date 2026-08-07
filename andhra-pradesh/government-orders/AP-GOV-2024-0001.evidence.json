@@ -1,0 +1,11 @@
+{
+  "document_id": "AP-GOV-2024-0001",
+  "source_url": "https://apfinance.gov.in/...Bud@et24-25/documents/Volume-III-16.pdf",
+  "download_timestamp": "2026-08-07T22:31:44Z",
+  "http_status": 200,
+  "content_type": "application/pdf",
+  "sha256": "f67aa03488f74aec8e61353d2dc18b9be90374f09741dad93f336c3ae4e4914f",
+  "verified_by": "pavan53732",
+  "acquisition_state": "CURATED",
+  "notes": "Verified directly from apfinance.gov.in (HTTP 200, application/pdf, 941562 bytes). 83 pages. Contains Major Head 105 Khadi & Village Industries allocations to AP KVIB (PMEGP implementing channel) and MSME development programmes. No explicit PMEGP keyword in the document but allocates funds to PMEGP-implementing agencies."
+}
