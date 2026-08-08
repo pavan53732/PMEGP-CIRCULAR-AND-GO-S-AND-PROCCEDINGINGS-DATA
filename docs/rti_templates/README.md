@@ -24,10 +24,11 @@ Per [`docs/ACQUISITION_DECISIONS.md`](../ACQUISITION_DECISIONS.md) AD-0002 and t
 
 | # | File | Target PIO | Priority | Documents Requested |
 |---|---|---|---|---|
-| 1 | [`01_coI_ap_state_targets.md`](01_coI_ap_state_targets.md) | Commissioner of Industries, AP | **Priority 1** | Annual target allocation proceedings (FY 2024-25, 2025-26, 2026-27), quarterly monitoring instructions, State Level Task Force minutes |
-| 2 | [`02_slbc_ap_quarterly.md`](02_slbc_ap_quarterly.md) | SLBC AP Convenor Bank | **Priority 2** | Quarterly agenda books and minutes (last 8 quarters), district performance reviews for Visakhapatnam and Anakapalli |
-| 3 | [`03_kvic_state_office.md`](03_kvic_state_office.md) | KVIC State Director, AP | **Priority 3** | Review letters to banks on delayed MM releases, annual action plan, EDP training calendar, state-level target correspondence |
-| 4 | [`04_district_collector.md`](04_district_collector.md) | District Collectors (Visakhapatnam & Anakapalli) | **Priority 4** | DIC annual target allocations, DLCC/DLRC minutes, Lead Bank directives, Collector DLMC review logs |
+| 1 | [`01_coI_ap_state_targets.md`](01_coI_ap_state_targets.md) | Commissioner of Industries, AP | **Priority 1** (Layer 1) | Annual target allocation proceedings (FY 2024-25, 2025-26, 2026-27), quarterly monitoring instructions, State Level Task Force minutes |
+| 2 | [`02_slbc_ap_quarterly.md`](02_slbc_ap_quarterly.md) | SLBC AP Convenor Bank | **Priority 2** (Cross-layer banking) | Quarterly agenda books and minutes (last 8 quarters), district performance reviews for Visakhapatnam and Anakapalli |
+| 3 | [`03_kvic_state_office.md`](03_kvic_state_office.md) | KVIC State Director, AP | **Priority 3** (Central-state bridge) | Review letters to banks on delayed MM releases, annual action plan, EDP training calendar, state-level target correspondence |
+| 4 | [`04_district_collector.md`](04_district_collector.md) | District Collectors (Visakhapatnam & Anakapalli) | **Priority 4** (Layers 2 & 3) | DIC annual target allocations, DLCC/DLRC minutes, Lead Bank directives, Collector DLMC review logs |
+| 5 | [`05_des_ap_dhbs.md`](05_des_ap_dhbs.md) | Directorate of Economics and Statistics, AP | **Priority 5** (Statistical channel) | District Handbooks for FY 2013-14 through 2024-25 for all 26 districts (especially Visakhapatnam and Anakapalli) |
 
 ## Legal Basis
 

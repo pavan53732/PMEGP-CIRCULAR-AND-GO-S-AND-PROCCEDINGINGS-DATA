@@ -237,4 +237,4 @@ File RTI with the **Directorate of Economics and Statistics, AP** requesting:
 - District Handbooks for FY 2014-15 through 2024-25 for all 26 districts, especially Visakhapatnam (the user-specified focus district whose 2013-14 DHB was not archived).
 - Newer DHB editions (post-2022) for the 13 newly formed districts (Anakapalli, Alluri Sitharama Raju, Parvathipuram Manyam, etc.).
 
-See [`docs/collection_guide.md`](collection_guide.md) Method 2 for the RTI query template, and [`docs/rti_templates/`](rti_templates/) for ready-to-file RTI application drafts (Priorities 1, 2, 3, 4 only — Priority 5 to be drafted).
+See [`docs/collection_guide.md`](collection_guide.md) Method 2 for the RTI query template, and [`docs/rti_templates/05_des_ap_dhbs.md`](rti_templates/05_des_ap_dhbs.md) for the ready-to-file RTI application draft for this priority.
