@@ -197,6 +197,55 @@ The following diagram shows how a single state-level G.O. flows through the thre
 
 ---
 
+## 3.5. District Portal PMEGP/KVIB Page Sweep Results (CDX Discovery)
+
+A comprehensive CDX sweep of all 26 AP district subdomains on `ap.gov.in` via the Wayback Machine (using `matchType=domain` with filters for `khadi`, `pmegp`, `kvib`, `village-industries`, and `industries` keywords) revealed that **only 5 districts** have PMEGP-bearing pages on their portals. The other 21 districts have **zero PMEGP/KVIB/khadi URLs** in the Wayback Machine index.
+
+### Districts with PMEGP/KVIB Portal Pages (5 of 26)
+
+| District | URL | Document ID | PMEGP Mentions | Content |
+|---|---|---|---|---|
+| **SPS Nellore** | `spsnellore.ap.gov.in/ap-khadi-village-industries-board/` | `AP_NLR-KVIB-2025-0001` | 7 | PMEGP scheme details, Deputy Director APKVIB contact (deputydirector.nlr@gmail.com, SPSR Nellore - 524004) |
+| **West Godavari** | `westgodavari.ap.gov.in/khadi-and-village-industries-board/` | `AP_WG-KVIB-2025-0001` | 10 | **PMEGP Committee structure** (Collector Chairman, PD DRDA Vice-chair, Lead Bank, KVIC/KVIB/DIC reps, GM DIC Convenor), APKVIB officer contacts |
+| **West Godavari** | `westgodavari.ap.gov.in/directory/industries-kvib/` | `AP_WG-KVIB-2021-0001` | 0 | KVIB officer directory (companion to above) |
+| **Kurnool** | `kurnool.ap.gov.in/...PMEGPscheme.pdf` | `AP_KNL-DIC-2015-0001` | 71 | Full PMEGP scheme guidelines (24 pages) hosted as recruitment download |
+| **Alluri Sitharama Raju** | `allurisitharamaraju.ap.gov.in/industries-department/` | `AP_ASR-DIC-2026-0001` | 1 | DIC functions, PMEGP listed as major scheme, staff hierarchy |
+| **Anakapalli** | `anakapalli.ap.gov.in/industries/` | `AP_ANA-DIC-2025-0001` | 7 | DIC functions, PMEGP implementation, DIEPC meetings, Udyam integration, PM Vishwakarma Scheme |
+
+### Districts with NO PMEGP/KVIB Portal Pages (21 of 26)
+
+The following 21 districts have no `khadi`, `pmegp`, `kvib`, `village-industries`, or `industries` URLs in the Wayback Machine index. RTI is the **only** acquisition channel for these districts:
+
+`alluri-sitharama-raju` (no `/khadi/` page, but has `/industries-department/`), `anantapur`, `annamayya`, `bapatla`, `chittoor`, `dr-br-ambedkar-konaseema`, `east-godavari`, `eluru`, `guntur`, `kakinada`, `krishna`, `nandyal`, `ntr`, `palnadu`, `parvathipuram-manyam`, `prakasam`, `srikakulam`, `sri-sathya-sai`, `tirupati`, `visakhapatnam`, `vizianagaram`, `ysr-kadapa`
+
+### Key Finding: PMEGP Committee Structure Confirmed
+
+The West Godavari KVIB page (`AP_WG-KVIB-2025-0001`) provides the **first archival evidence** of the PMEGP Committee structure at the district level, confirming the Layer 2 (Collector) and Layer 3 (PD/GM) hierarchy:
+
+```
+PMEGP Committee (per district, chaired by District Collector)
+├── District Collector                                    — Chairman
+├── PD DRDA / EO, Zilla Panchayat                        — Vice-chairman
+├── Lead Bank Manager                                     — Member
+├── Representatives of KVIC, KVIB, and DIC               — Members
+├── Representatives of NYKS / SC/ST Corporation           — Invitees
+├── Representatives of MSME-DI / ITI / Polytechnic        — Invitees
+├── 3 Panchayat Representatives                          — Members (nominated by Chairman, rotated annually)
+└── General Manager, District Industries Centre (DIC)    — Member-Convenor
+```
+
+This committee meets **quarterly** to review PMEGP scheme progress. The District Officers of APKVIB forward applications selected by this committee to the respective banks for loan sanction.
+
+### Implications for RTI Strategy
+
+The sweep confirms that:
+1. **Only 5 of 26 districts** have any online PMEGP documentation.
+2. The **Visakhapatnam focus district** has **zero** PMEGP-bearing pages on its portal — RTI is essential.
+3. The **Anakapalli focus district** has a comprehensive `/industries/` page (`AP_ANA-DIC-2025-0001`) documenting DIC functions including PMEGP, but no actual PMEGP circulars or proceedings — RTI is still needed for those.
+4. The 4 RTI templates in [`docs/rti_templates/`](rti_templates/) remain the primary acquisition channel for the 21 districts with no online PMEGP documentation.
+
+---
+
 ## 4. State-Level Authorities Above the Commissioner
 
 | Authority | Role | Document Types | Archive Status |
