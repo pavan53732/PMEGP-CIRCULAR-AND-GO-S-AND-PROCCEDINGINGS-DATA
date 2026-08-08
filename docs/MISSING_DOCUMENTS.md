@@ -2,9 +2,11 @@
 
 This document acts as an active, collaborative checklist of known official documents, timeframes, or regional proceedings that are currently missing from this archive. Contributors are encouraged to target these gaps.
 
-It is organised by the **tripartite administrative reality** of PMEGP implementation: every target, every fund release, and every review involves the three implementing channels — **KVIC, KVIB, and DIC** — operating in parallel. The historical allocation ratio is approximately **KVIC 30% : KVIB 30% : DIC 40%** (or 60:40 between KVIC/KVIB combined and DICs in some fiscal years). When looking for any FY 2026-27 target order, we must find the version that shows all three channels side-by-side.
+It is organised by the **three-layer administrative hierarchy** codified in [`docs/ADMINISTRATIVE_HIERARCHY.md`](ADMINISTRATIVE_HIERARCHY.md): every PMEGP directive flows through **Layer 1 (State Commissioners) → Layer 2 (District Collectors) → Layer 3 (Project Directors / General Managers)**, with parallel implementation channels at each layer via the **tripartite KVIC / KVIB / DIC** structure (historical allocation ratio approximately **KVIC 30% : KVIB 30% : DIC 40%**).
 
-See also [`docs/DISTRICT_PMEGP_PROGRESS_FY2024_25.md`](DISTRICT_PMEGP_PROGRESS_FY2024_25.md) for the district-wise PMEGP progress baseline that informs the prioritisation below.
+See also:
+- [`docs/ADMINISTRATIVE_HIERARCHY.md`](ADMINISTRATIVE_HIERARCHY.md) — the definitive operational baseline for understanding who issues what type of document, and how state-level G.O.s get translated into local field action.
+- [`docs/DISTRICT_PMEGP_PROGRESS_FY2024_25.md`](DISTRICT_PMEGP_PROGRESS_FY2024_25.md) — district-wise PMEGP progress baseline that informs the prioritisation below.
 
 ---
 
@@ -16,8 +18,8 @@ See also [`docs/DISTRICT_PMEGP_PROGRESS_FY2024_25.md`](DISTRICT_PMEGP_PROGRESS_F
 - [x] ~~**Udyam Portal Registration O.M.s:~~ **ACQUIRED** as `IN-MSME-2020-0001` (17.07.2020), `IN-MSME-2020-0002` through `IN-MSME-2020-0005`, and `IN-MSME-2021-0001`.
 - [x] ~~**Original 2008 PMEGP Guidelines:~~ **ACQUIRED** as `IN-MSME-2008-0001` (KVI Policy and Establishment Section).
 - [x] ~~**2014 & 2015 Operational Guideline Modifications:~~ **ACQUIRED** as `IN-MSME-2014-0001` (20.09.2014) and `IN-MSME-2015-0001` (06.05.2015), both OCR-processed.
-- [ ] **2023 Guidelines Revisions:** The December 2023 revised guidelines (`IN-MSME-2023-0001` in archive) are referenced in the May 2022 O.M. but we should track down any companion O.M.s issued in late 2023 that may have modified the operational guidelines further.
-- [ ] **PMEGP 16th Finance Commission Continuation O.M. (2026-27 onwards):** The 15th Finance Commission cycle ends on 31 March 2026. The continuation O.M. for the 16th Finance Commission cycle (2026-27 to 2030-31) is expected to be issued by MoMSME in Q1-Q2 2026. **This is the highest-priority Central gap.**
+- [x] ~~**2023 Guidelines Revisions:**~~ **ACQUIRED** as `IN-MSME-2023-0002` — O.M. No. PMEGP/UdhyamReg./01/2023 dated 07.12.2023, which superseded the May 2022 O.M. and made Udyam Registration mandatory for all new PMEGP units before physical verification and margin money adjustment.
+- [ ] **PMEGP 16th Finance Commission Continuation O.M. (2026-27 onwards):** The 15th Finance Commission cycle ends on 31 March 2026. The continuation O.M. for the 16th Finance Commission cycle (2026-27 to 2030-31) is expected to be issued by MoMSME in Q1-Q2 2026. As of August 2026, after probing the latest MSME PMEGP page (Wayback snapshot 2025-12-07) and CDX queries for 2026 msme.gov.in PDFs, **no such O.M. has been published yet**. This remains the highest-priority Central gap. Set up a Google Alert for "PMEGP continuation 2026-27" or check msme.gov.in monthly.
 
 ### B. KVIC National Circulars
 
@@ -95,22 +97,22 @@ For each priority district, we need to acquire the following document types from
 
 These districts have the most active PMEGP pipelines and should produce the highest volume of district-level proceedings:
 
-| District | Target (Prj) | Sanctioned (Prj) | MM Disbursed (₹ Lakh) | Lead Bank | DIC GM | KVIB Officer | KVIC Rep | Target Date |
-|---|---|---|---|---|---|---|---|---|
-| **Prakasam** | 87 | 254 | 552.98 | TBD | TBD | TBD | TBD | Q4 2026 |
-| **Annamayya** | 69 | 271 | 299.17 | TBD | TBD | TBD | TBD | Q4 2026 |
-| **Tirupati** | 78 | 239 | 344.28 | TBD | TBD | TBD | TBD | Q4 2026 |
-| **East Godavari** | 44 | 185 | 588.91 | TBD | TBD | TBD | TBD | Q4 2026 |
-| **Anantapur** | 71 | 170 | 316.10 | TBD | TBD | TBD | TBD | Q4 2026 |
+| District | Target (Prj) | Sanctioned (Prj) | MM Disbursed (₹ Lakh) | Lead Bank | DIC GM | KVIB Officer | KVIC Rep | DHB 2013-14 | Target Date |
+|---|---|---|---|---|---|---|---|---|---|
+| **Prakasam** | 87 | 254 | 552.98 | TBD | TBD | TBD | TBD | ✅ `AP_PKM-DIC-2018-0001` | Q4 2026 |
+| **Annamayya** | 69 | 271 | 299.17 | TBD | TBD | TBD | TBD | ❌ (district formed 2022) | Q4 2026 |
+| **Tirupati** | 78 | 239 | 344.28 | TBD | TBD | TBD | TBD | ❌ (district formed 2022) | Q4 2026 |
+| **East Godavari** | 44 | 185 | 588.91 | TBD | TBD | TBD | TBD | ❌ Missing | Q4 2026 |
+| **Anantapur** | 71 | 170 | 316.10 | TBD | TBD | TBD | TBD | ❌ Missing | Q4 2026 |
 
 ### Tier B — User-Specified Focus Districts
 
 **Visakhapatnam and Anakapalli are the primary focus** per the acquisition roadmap. Both were part of the undivided Visakhapatnam district until 2022, when Anakapalli was carved out as a separate district.
 
-| District | Target (Prj) | Sanctioned (Prj) | MM Disbursed (₹ Lakh) | Lead Bank | DIC GM | KVIB Officer | KVIC Rep | Target Date |
-|---|---|---|---|---|---|---|---|---|
-| **Visakhapatnam** | 26 | 27 | 80.70 | **State Bank of India (SBI)** | TBD | TBD | TBD | Q3 2026 |
-| **Anakapalli** | 55 | 159 | 100.96 | **Union Bank of India** | TBD | TBD | TBD | Q3 2026 |
+| District | Target (Prj) | Sanctioned (Prj) | MM Disbursed (₹ Lakh) | Lead Bank | DIC GM | KVIB Officer | KVIC Rep | DHB 2013-14 | Target Date |
+|---|---|---|---|---|---|---|---|---|---|
+| **Visakhapatnam** | 26 | 27 | 80.70 | **State Bank of India (SBI)** | TBD | TBD | TBD | ❌ Missing (not archived) | Q3 2026 |
+| **Anakapalli** | 55 | 159 | 100.96 | **Union Bank of India** | TBD | TBD | TBD | ❌ (district formed 2022) | Q3 2026 |
 
 #### Per-District Document Checklist (Visakhapatnam & Anakapalli)
 
@@ -177,9 +179,34 @@ If you identify a referenced document (e.g., a G.O. mentioned inside another pro
 
 ---
 
-## 7. RTI Filing Priority Queue
+## 7. DES District Handbooks (Statistical Channel)
 
-Given that many of the documents above are offline-only (per the AD-0002 mirror policy and the geoblocking reality of `slbcap.nic.in`, `industries.ap.gov.in`, and `apkvib.org.in`), the following RTI filings should be prioritised:
+The AP Directorate of Economics and Statistics (DES) publishes **District Handbooks (DHB)** annually for each district, with Chapter 9 "Industries" containing Small Scale Industries, Cottage Industries, and Working Factories data **sourced directly from the General Manager of the District Industries Centre (DIC)**.
+
+While not PMEGP-specific, these handbooks are the **only online-accessible source of district-level DIC data**. They provide critical context for PMEGP field implementation and serve as a proxy for direct DIC proceedings (which require RTI).
+
+**Status**:
+- [x] ~~DHB Vizianagaram 2013-14~~ **ACQUIRED** as `AP_VZM-DIC-2018-0001` (303 pages, 25 Industries mentions)
+- [x] ~~DHB Prakasam 2013-14~~ **ACQUIRED** as `AP_PKM-DIC-2018-0001` (328 pages, 23 Industries mentions)
+- [x] ~~DHB Krishna 2013-14~~ **ACQUIRED** as `AP_KRI-DIC-2018-0001` (329 pages, 21 Industries mentions)
+- [x] ~~ASI Publication 2012-13~~ **ACQUIRED** as `AP-GOV-2018-0002` (199 pages, 39 Industries mentions)
+- [x] ~~CLH Phase I 2010-11~~ **ACQUIRED** as `AP-GOV-2018-0003`
+- [x] ~~APGLANE 2015-16~~ **ACQUIRED** as `AP-GOV-2018-0004`
+- [x] ~~Annual Admin Report 2017-18 to 2020-21~~ **ACQUIRED** as `AP-GOV-2018-0005`, `AP-GOV-2019-0002`, `AP-GOV-2020-0003`, `AP-GOV-2021-0003`
+
+**Missing DHBs (not archived by Wayback Machine)**:
+- [ ] **DHB Visakhapatnam 2013-14** — Wayback Machine returned 404. The Visakhapatnam DHB is critical given that Visakhapatnam is one of the two user-specified focus districts. RTI to DES AP or DIC Visakhapatnam required.
+- [ ] **DHB Anakapalli 2013-14** — District was only formed in 2022, so no 2013-14 DHB exists. Newer DHBs (post-2022) may exist but are not on the DES portal.
+- [ ] **DHBs for the other 23 districts (2013-14)** — Wayback CDX only shows Vizianagaram, Prakasam, and Krishna. The remaining 23 districts' DHBs were either never published online or never archived.
+- [ ] **DHBs for newer years (2014-15 onwards)** — DES AP appears to have stopped publishing DHBs after 2013-14 (or moved them behind a non-archived search interface).
+
+**Acquisition route for missing DHBs**: File RTI with the **Directorate of Economics and Statistics, AP** requesting DHBs for FY 2014-15 through 2024-25 for all 26 districts.
+
+---
+
+## 8. RTI Filing Priority Queue
+
+Given that many of the documents above are offline-only (per the AD-0002 mirror policy and the geoblocking reality of `slbcap.nic.in`, `industries.ap.gov.in`, and `apkvib.org.in`), the following RTI filings should be prioritised. The queue is mapped to the three-layer administrative hierarchy in [`docs/ADMINISTRATIVE_HIERARCHY.md`](ADMINISTRATIVE_HIERARCHY.md).
 
 ### Priority 1 — State-Level Tripartite Allocation (Q3 2026)
 File RTI with the **Commissioner of Industries, AP** requesting:
@@ -205,4 +232,9 @@ File RTI with the **District Collector's PIO** (Visakhapatnam and Anakapalli) re
 - Lead Bank directives and annual credit plans.
 - Collector DLMC review logs.
 
-See [`docs/collection_guide.md`](collection_guide.md) Method 2 for the RTI query template.
+### Priority 5 — DES District Handbooks for Missing Districts (Q4 2026)
+File RTI with the **Directorate of Economics and Statistics, AP** requesting:
+- District Handbooks for FY 2014-15 through 2024-25 for all 26 districts, especially Visakhapatnam (the user-specified focus district whose 2013-14 DHB was not archived).
+- Newer DHB editions (post-2022) for the 13 newly formed districts (Anakapalli, Alluri Sitharama Raju, Parvathipuram Manyam, etc.).
+
+See [`docs/collection_guide.md`](collection_guide.md) Method 2 for the RTI query template, and [`docs/rti_templates/`](rti_templates/) for ready-to-file RTI application drafts (Priorities 1, 2, 3, 4 only — Priority 5 to be drafted).
