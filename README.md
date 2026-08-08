@@ -75,9 +75,9 @@ The status table below is automatically compiled and updated from the master dat
 <!-- STATUS_TABLE_START -->
 
 ### Archive Collection Completeness
-**Completeness Score: `5.63%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
+**Completeness Score: `6.00%`** *(Progress is measured against verified totals where confirmed, or planning estimates by default)*
 ```text
-[█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 150 / 2665 documents collected
+[█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 160 / 2665 documents collected
 ```
 
 #### Completeness Breakdown by Official Source
@@ -92,7 +92,7 @@ The status table below is automatically compiled and updated from the master dat
 | Central KVIC EDP Guidelines | 25 | Pending Audit | 2 | 🟡 In Progress | `[░░░░░░░░░░]` (8.0%) |
 | Central KVIC Portal Advisories | 20 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | AP Government Orders (GOs) | 120 | Pending Audit | 15 | 🟡 In Progress | `[█░░░░░░░░░]` (12.5%) |
-| AP State Circulars & Memos | 80 | Pending Audit | 8 | 🟡 In Progress | `[█░░░░░░░░░]` (10.0%) |
+| AP State Circulars & Memos | 80 | Pending Audit | 15 | 🟡 In Progress | `[█░░░░░░░░░]` (18.8%) |
 | AP Commissioner Proceedings | 450 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | AP Commissioner Circulars | 150 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | AP Commissioner Instructions | 100 | Pending Audit | 1 | 🟡 In Progress | `[░░░░░░░░░░]` (1.0%) |
@@ -103,12 +103,12 @@ The status table below is automatically compiled and updated from the master dat
 | SLBC Meeting Minutes | 40 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | SLBC Monitoring Reports | 50 | Pending Audit | 1 | 🟡 In Progress | `[░░░░░░░░░░]` (2.0%) |
 | District Collector Proceedings | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
-| District DIC Proceedings | 260 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
+| District DIC Proceedings | 260 | Pending Audit | 3 | 🟡 In Progress | `[░░░░░░░░░░]` (1.2%) |
 | District DLCC Meeting Minutes | 260 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | District DLRC Meeting Reports | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | District Lead Bank Guidelines | 130 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
 | Commercial Banks Circulars | 100 | Pending Audit | 0 | ⏳ Pending | `[░░░░░░░░░░]` (0.0%) |
-| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **150** | **🟡 Curation Phase** | `[█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (5.63%) |
+| **TOTAL ARCHIVE** | **2665** | **Audit Underway** | **160** | **🟡 Curation Phase** | `[█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░]` (6.00%) |
 
 <!-- STATUS_TABLE_END -->
 

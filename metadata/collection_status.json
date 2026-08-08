@@ -51,7 +51,7 @@
     "label": "AP State Circulars & Memos",
     "expected": 80,
     "verified_total": null,
-    "collected": 8
+    "collected": 15
   },
   "ap_coi_proceedings": {
     "label": "AP Commissioner Proceedings",
@@ -117,7 +117,7 @@
     "label": "District DIC Proceedings",
     "expected": 260,
     "verified_total": null,
-    "collected": 0
+    "collected": 3
   },
   "districts_dlcc": {
     "label": "District DLCC Meeting Minutes",
