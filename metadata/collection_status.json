@@ -117,7 +117,7 @@
     "label": "District DIC Proceedings",
     "expected": 260,
     "verified_total": null,
-    "collected": 3
+    "collected": 6
   },
   "districts_dlcc": {
     "label": "District DLCC Meeting Minutes",
@@ -142,5 +142,11 @@
     "expected": 100,
     "verified_total": null,
     "collected": 0
+  },
+  "districts_kvib": {
+    "label": "District KVIB Pages",
+    "expected": 26,
+    "verified_total": null,
+    "collected": 3
   }
 }

@@ -70,6 +70,8 @@ def get_category_key(path):
                 return "districts_dlrc"
             elif sub == "lead-bank":
                 return "districts_lead_bank"
+            elif sub == "kvib":
+                return "districts_kvib"
                 
     # Banks
     elif path.startswith("banks"):

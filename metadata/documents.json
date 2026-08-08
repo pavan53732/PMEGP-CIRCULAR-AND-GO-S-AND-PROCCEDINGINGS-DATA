@@ -5912,5 +5912,255 @@
       "archive_url": "https://web.archive.org/web/20220609020628/https://des.ap.gov.in/jsp/social/AnnualAdministrationReport-2020-21.pdf"
     },
     "relationships": []
+  },
+  {
+    "document_id": "AP_NLR-KVIB-2025-0001",
+    "title": "AP Khadi & Village Industries Board - SPS Nellore District (PMEGP Scheme Details and Officer Contacts)",
+    "type": "Report",
+    "issuing_authority": "District Administration, SPS Nellore",
+    "department": "Industries",
+    "state": "Andhra Pradesh",
+    "district": "Sps Nellore",
+    "date": "2025-03-26",
+    "reference_no": "NLR-KVIB-PORTAL-2025",
+    "subject": "SPS Nellore District portal page for AP Khadi & Village Industries Board, documenting the PMEGP scheme details (subsidy rates, eligibility, project cost limits), the Deputy Director APKVIB contact information, and links to kvic.org.in and kviconline.gov.in",
+    "keywords": [
+      "PMEGP",
+      "KVIB",
+      "APKVIB",
+      "Sps Nellore",
+      "District Portal",
+      "Subsidy",
+      "Khadi",
+      "Village Industries",
+      "Deputy Director"
+    ],
+    "source_url": "https://spsnellore.ap.gov.in/ap-khadi-village-industries-board/",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "B",
+    "quality_metadata": "A",
+    "file_path": "districts/sps-nellore/kvib/AP_NLR-KVIB-2025-0001.html",
+    "provenance": {
+      "downloaded_from": "https://spsnellore.ap.gov.in/ap-khadi-village-industries-board/",
+      "download_date": "2026-08-08",
+      "downloaded_by": "pavan53732",
+      "sha256": "4499907c91237bcd9f9ecac1f294f8d2889ffb35726fc6a317580fb143382080",
+      "original_filename": "ap-khadi-village-industries-board.html",
+      "archive_url": "https://web.archive.org/web/20250326074246/https://spsnellore.ap.gov.in/ap-khadi-village-industries-board/"
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP_WG-KVIB-2025-0001",
+    "title": "Khadi and Village Industries Board - West Godavari District (PMEGP Committee Structure and Officer Contacts)",
+    "type": "Report",
+    "issuing_authority": "District Administration, West Godavari",
+    "department": "Industries",
+    "state": "Andhra Pradesh",
+    "district": "West Godavari",
+    "date": "2025-01-21",
+    "reference_no": "WG-KVIB-PORTAL-2025",
+    "subject": "West Godavari District portal page for Khadi and Village Industries Board, documenting the PMEGP Committee structure (District Collector as Chairman, PD DRDA as Vice-chair, Lead Bank Manager, KVIC/KVIB/DIC representatives, GM DIC as Convenor), scheme details, and APKVIB officer contact information",
+    "keywords": [
+      "PMEGP",
+      "KVIB",
+      "APKVIB",
+      "West Godavari",
+      "District Portal",
+      "PMEGP Committee",
+      "District Collector",
+      "PD DRDA",
+      "Lead Bank",
+      "GM DIC"
+    ],
+    "source_url": "https://westgodavari.ap.gov.in/khadi-and-village-industries-board/",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "B",
+    "quality_metadata": "A",
+    "file_path": "districts/west-godavari/kvib/AP_WG-KVIB-2025-0001.html",
+    "provenance": {
+      "downloaded_from": "https://westgodavari.ap.gov.in/khadi-and-village-industries-board/",
+      "download_date": "2026-08-08",
+      "downloaded_by": "pavan53732",
+      "sha256": "442c37b960aa361e23b3d725381cd99882b3cf0a5ef7f08b5eaa4f1bc25fc94a",
+      "original_filename": "khadi-and-village-industries-board.html",
+      "archive_url": "https://web.archive.org/web/20250121022918/https://westgodavari.ap.gov.in/khadi-and-village-industries-board/"
+    },
+    "relationships": [
+      {
+        "target_id": "AP-GOV-2020-0002",
+        "type": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AP_KNL-DIC-2015-0001",
+    "title": "PMEGP Scheme Guidelines (Hosted by Kurnool District Portal)",
+    "type": "Guidelines",
+    "issuing_authority": "District Administration, Kurnool",
+    "department": "Industries",
+    "state": "Andhra Pradesh",
+    "district": "Kurnool",
+    "date": "2015-10-18",
+    "reference_no": "KNL-DIC-PMEGP-2015",
+    "subject": "Full PMEGP scheme guidelines (24 pages, 71 PMEGP mentions) hosted on the Kurnool district portal as part of a recruitment notification, documenting the scheme objectives, eligibility, subsidy rates, and implementation procedures",
+    "keywords": [
+      "PMEGP",
+      "Kurnool",
+      "DIC",
+      "District Portal",
+      "Scheme Guidelines",
+      "Subsidy",
+      "Eligibility",
+      "Implementation",
+      "KVIB",
+      "KVIC"
+    ],
+    "source_url": "http://www.kurnool.ap.gov.in:80/viewrecruitment.apo?mode=downloadFile&uploadpath=15.pdf&filename=PMEGPscheme.pdf",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "A",
+    "quality_metadata": "A",
+    "file_path": "districts/kurnool/dic/AP_KNL-DIC-2015-0001.pdf",
+    "provenance": {
+      "downloaded_from": "http://www.kurnool.ap.gov.in:80/viewrecruitment.apo?mode=downloadFile&uploadpath=15.pdf&filename=PMEGPscheme.pdf",
+      "download_date": "2026-08-08",
+      "downloaded_by": "pavan53732",
+      "sha256": "1459297547129cf3104d636bdd8dec62f14bee7c71739ef82460958ccaac950b",
+      "original_filename": "PMEGPscheme.pdf",
+      "archive_url": "https://web.archive.org/web/20151018031004/http://www.kurnool.ap.gov.in:80/viewrecruitment.apo?mode=downloadFile&uploadpath=15.pdf&filename=PMEGPscheme.pdf"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2008-0001",
+        "type": "references"
+      }
+    ]
+  },
+  {
+    "document_id": "AP_WG-KVIB-2021-0001",
+    "title": "Industries - KVIB Directory - West Godavari District",
+    "type": "Report",
+    "issuing_authority": "District Administration, West Godavari",
+    "department": "Industries",
+    "state": "Andhra Pradesh",
+    "district": "West Godavari",
+    "date": "2021-01-23",
+    "reference_no": "WG-KVIB-DIR-2021",
+    "subject": "West Godavari District portal KVIB directory page, listing contact information for KVIB officers in the district",
+    "keywords": [
+      "PMEGP",
+      "KVIB",
+      "West Godavari",
+      "Directory",
+      "Officers",
+      "Contact",
+      "District Portal"
+    ],
+    "source_url": "https://westgodavari.ap.gov.in/directory/industries-kvib/",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "B",
+    "quality_metadata": "B",
+    "file_path": "districts/west-godavari/kvib/AP_WG-KVIB-2021-0001.html",
+    "provenance": {
+      "downloaded_from": "https://westgodavari.ap.gov.in/directory/industries-kvib/",
+      "download_date": "2026-08-08",
+      "downloaded_by": "pavan53732",
+      "sha256": "2166abb434cb9733934d359c7b10b3ab74bcf910ea6f405a1ab060410b19b583",
+      "original_filename": "industries-kvib.html",
+      "archive_url": "https://web.archive.org/web/20210123041050/https://westgodavari.ap.gov.in/directory/industries-kvib/"
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP_ASR-DIC-2026-0001",
+    "title": "Industries Department - Alluri Sitharama Raju District (DIC Functions and Schemes)",
+    "type": "Report",
+    "issuing_authority": "District Administration, Alluri Sitharama Raju",
+    "department": "Industries",
+    "state": "Andhra Pradesh",
+    "district": "Alluri Sitharama Raju",
+    "date": "2026-06-05",
+    "reference_no": "ASR-DIC-PORTAL-2026",
+    "subject": "Alluri Sitharama Raju District portal Industries Department page, documenting DIC functions, major schemes (including PMEGP), and staff hierarchy (District Industries Officer as Head of DIC)",
+    "keywords": [
+      "PMEGP",
+      "Alluri Sitharama Raju",
+      "DIC",
+      "District Portal",
+      "Industries Department",
+      "RAMP",
+      "APIIC",
+      "IDP 2024-29",
+      "District Industries Officer"
+    ],
+    "source_url": "https://allurisitharamaraju.ap.gov.in/industries-department/",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "B",
+    "quality_metadata": "A",
+    "file_path": "districts/alluri-sitharama-raju/dic/AP_ASR-DIC-2026-0001.html",
+    "provenance": {
+      "downloaded_from": "https://allurisitharamaraju.ap.gov.in/industries-department/",
+      "download_date": "2026-08-08",
+      "downloaded_by": "pavan53732",
+      "sha256": "929359aafb94746cf51e1c63af796bff394ddfb8742619d8ee3afdd0d500521e",
+      "original_filename": "industries-department.html",
+      "archive_url": "https://web.archive.org/web/20260605125240/https://allurisitharamaraju.ap.gov.in/industries-department/"
+    },
+    "relationships": []
+  },
+  {
+    "document_id": "AP_ANA-DIC-2025-0001",
+    "title": "Industries Department - Anakapalli District (DIC Functions, PMEGP Implementation, DIEPC Meetings)",
+    "type": "Report",
+    "issuing_authority": "District Administration, Anakapalli",
+    "department": "Industries",
+    "state": "Andhra Pradesh",
+    "district": "Anakapalli",
+    "date": "2025-02-08",
+    "reference_no": "ANA-DIC-PORTAL-2025",
+    "subject": "Anakapalli District portal Industries Department page, documenting DIC functions including PMEGP implementation, DIEPC (District Industrial and Export Promotion Committee) meetings, Udyam portal integration, PM Vishwakarma Scheme, and links to PMEGP resources. FIRST PMEGP-bearing document from the Anakapalli focus district.",
+    "keywords": [
+      "PMEGP",
+      "Anakapalli",
+      "DIC",
+      "District Portal",
+      "Industries Department",
+      "DIEPC",
+      "Udyam",
+      "PM Vishwakarma",
+      "MSME",
+      "Focus District"
+    ],
+    "source_url": "https://anakapalli.ap.gov.in/industries/",
+    "status": "Active",
+    "source_authority_level": "PRIMARY",
+    "quality_authenticity": "A",
+    "quality_document": "B",
+    "quality_metadata": "A",
+    "file_path": "districts/anakapalli/dic/AP_ANA-DIC-2025-0001.html",
+    "provenance": {
+      "downloaded_from": "https://anakapalli.ap.gov.in/industries/",
+      "download_date": "2026-08-08",
+      "downloaded_by": "pavan53732",
+      "sha256": "8f462766eac7e31c36658c5ea06df4396c881e5475c369b94ca13c80dea2d2ee",
+      "original_filename": "industries.html",
+      "archive_url": "https://web.archive.org/web/20250208232848/https://anakapalli.ap.gov.in/industries/"
+    },
+    "relationships": [
+      {
+        "target_id": "IN-MSME-2023-0002",
+        "type": "references"
+      }
+    ]
   }
 ]
